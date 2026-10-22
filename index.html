@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toolkit — PRISON_NAME Toolkit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Action toolkit for supporting people incarcerated at PRISON_NAME. How to help, schedule, downloadable materials, and resources." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="site-title">PRISON_NAME Toolkit</h1>
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#actions">How to Help</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div>
+          <h2 id="hero-title">Take action to support people at PRISON_NAME</h2>
+          <p class="lead">This toolkit explains what’s happening, when events are planned, and practical ways to support loved ones and amplify the message.</p>
+          <p class="hero-cta">
+            <a class="btn primary" href="#download" id="downloadBtn">Download toolkit (PDF)</a>
+            <button class="btn" id="printBtn">Print</button>
+            <a class="btn ghost" href="#share" id="shareBtn">Share</a>
+          </p>
+        </div>
+        <aside class="hero-side" aria-hidden="false">
+          <div class="card small">
+            <strong>Current status</strong>
+            <p>Insert short status: e.g., "Hunger strike ongoing since DATE" or "Demands: list short items."</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview" class="wrap section" aria-labelledby="overview-title">
+      <h3 id="overview-title">Overview</h3>
+      <p>This section briefly explains the context: who is impacted, summary of demands, and why people should take action. Replace this paragraph with the specifics for the prison(s) you’re covering.</p>
+      <ul class="demand-list" aria-label="Demands">
+        <li><strong>Demand 1:</strong> Short description.</li>
+        <li><strong>Demand 2:</strong> Short description.</li>
+        <li><strong>Demand 3:</strong> Short description.</li>
+      </ul>
+    </section>
+
+    <section id="schedule" class="wrap section" aria-labelledby="schedule-title">
+      <h3 id="schedule-title">Schedule</h3>
+      <p>Planned dates & actions. People can join or follow remotely.</p>
+
+      <ol class="schedule-list">
+        <li>
+          <time datetime="2026-11-01">Nov 1, 2026</time> — Phone zaps: Call & leave messages to facility and oversight bodies. <a href="#actions" class="inline-link">See scripts</a>.
+        </li>
+        <li>
+          <time datetime="2026-11-05">Nov 5, 2026</time> — Solidarity vigil at LOCATION. <a href="#contact" class="inline-link">Contact organizer</a>.
+        </li>
+        <li>
+          <time datetime="2026-11-10">Nov 10, 2026</time> — Day of digital action: share graphics & tag officials. <a href="#resources" class="inline-link">Download assets</a>.
+        </li>
+      </ol>
+    </section>
+
+    <section id="actions" class="wrap section" aria-labelledby="actions-title">
+      <h3 id="actions-title">How to help — Practical actions</h3>
+
+      <div class="grid">
+        <article class="card">
+          <h4>Call & Fax</h4>
+          <p>Phone numbers: <strong>Facility:</strong> 000-000-0000 — <strong>Warden:</strong> 000-000-0000</p>
+          <p><em>Script:</em> “Hello, my name is ___. I’m calling about [NAME or GENERAL]. I’m concerned about …”</p>
+          <a class="btn small" href="#contact">Get numbers & scripts</a>
+        </article>
+
+        <article class="card">
+          <h4>Social media</h4>
+          <p>Share the graphics and tag officials: @official1 @official2. Use hashtag #FreeThemNow</p>
+          <a class="btn small" href="#resources">Download graphics</a>
+        </article>
+
+        <article class="card">
+          <h4>Attend a vigil</h4>
+          <p>Join local vigils or create one. Keep them peaceful and document with photos (ask participants for consent).</p>
+          <a class="btn small" href="#contact">Find local groups</a>
+        </article>
+
+        <article class="card">
+          <h4>Donate / Support families</h4>
+          <p>Links to verified mutual aid funds and legal defense funds go here.</p>
+          <a class="btn small" href="#resources">Donate & support</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="wrap section" aria-labelledby="resources-title">
+      <h3 id="resources-title">Resources & downloads</h3>
+      <ul class="resource-list">
+        <li><a href="#" download>Printable flyer (8.5x11)</a></li>
+        <li><a href="#" download>Social media graphic (1080x1080)</a></li>
+        <li><a href="#" download>Action scripts and phone scripts (PDF)</a></li>
+      </ul>
+
+      <h4>Legal & safety</h4>
+      <p>Information for organizers on safety, privacy, and legal considerations.</p>
+    </section>
+
+    <section id="translations" class="wrap section" aria-labelledby="translations-title">
+      <h3 id="translations-title">Translations</h3>
+      <p>Translated versions: <a href="?lang=es">Español</a> · <a href="?lang=fr">Français</a></p>
+    </section>
+
+    <section id="contact" class="wrap section" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact & local organizers</h3>
+      <p>Organizers: <strong>ORG_NAME</strong> — Email: <a href="mailto:organizer@example.org">organizer@example.org</a> — Phone: 000-000-0000</p>
+      <p>To report updates or request additions to this page, email the organizer or use the form below.</p>
+
+      <form class="contact-form" aria-label="Contact form" method="post" action="#">
+        <label>
+          Your name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>© <span id="year"></span> ORG_NAME — Make sure to verify resource links & phone numbers before publishing.</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Basic functionality: print + year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('printBtn').addEventListener('click', function () {
+      window.print();
+    });
+    // Hook up download button to a PDF if you have one
+    document.getElementById('downloadBtn').addEventListener('click', function (e) {
+      // replace 'toolkit.pdf' with your file
+      location.href = 'toolkit.pdf';
+    });
+  </script>
+</body>
+</html>
