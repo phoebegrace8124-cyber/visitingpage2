@@ -55,3 +55,85 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   .grid{grid-template-columns:1fr}
   a::after{content: " (" attr(href) ")"; font-size:90%}
 }
+
+
+/* ===== Visiting Guidelines section (scoped, won't affect other sections) ===== */
+#visiting-guidelines .lead{color:var(--muted);max-width:60ch}
+
+/* Dress code cards */
+#visiting-guidelines .dress-card{
+  border-radius:14px;
+  padding:1.25rem 1.5rem;
+  color:#fff;
+  box-shadow:0 8px 22px rgba(20,20,30,0.18);
+}
+#visiting-guidelines .dress-card.family{background:linear-gradient(135deg,var(--accent),#8f1d1d)}
+#visiting-guidelines .dress-card.attorney{background:linear-gradient(135deg,#3a3a3a,var(--accent-2))}
+#visiting-guidelines .dress-card h4{margin:.6rem 0 .25rem;font-size:1.3rem}
+#visiting-guidelines .dress-card p{margin:.25rem 0}
+
+#visiting-guidelines .dress-badge{
+  display:inline-block;
+  background:var(--card);
+  color:var(--accent-2);
+  font-weight:700;
+  font-size:.8rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  padding:.25rem .7rem;
+  border-radius:999px;
+}
+#visiting-guidelines .dress-label{
+  display:block;
+  margin-top:1rem;
+  font-size:.85rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#ffd9d9;
+}
+#visiting-guidelines .attorney .dress-label{color:#ffcf6b}
+
+#visiting-guidelines .no-list{list-style:none;padding:0;margin:.5rem 0 0}
+#visiting-guidelines .no-list li{
+  position:relative;
+  padding:.35rem 0 .35rem 1.7rem;
+  border-bottom:1px solid rgba(255,255,255,0.18);
+}
+#visiting-guidelines .no-list li:last-child{border-bottom:0}
+#visiting-guidelines .no-list li::before{
+  content:"\2715";
+  position:absolute;
+  left:0;
+  top:.35rem;
+  font-weight:700;
+  color:#ffd166;
+}
+#visiting-guidelines .dress-note{
+  margin-top:1rem;
+  padding:.6rem .8rem;
+  background:rgba(255,255,255,0.14);
+  border-radius:8px;
+  font-size:.95rem;
+}
+
+/* Good to know cards */
+#visiting-guidelines .facts-title{margin:2rem 0 .75rem}
+#visiting-guidelines .facts-grid{grid-template-columns:repeat(3,1fr)}
+#visiting-guidelines .card.fact{border-top:4px solid var(--accent)}
+#visiting-guidelines .card.fact strong{color:var(--accent);font-size:1.05rem}
+#visiting-guidelines .card.fact p{margin:.4rem 0 0}
+
+@media (max-width:720px){
+  #visiting-guidelines .facts-grid{grid-template-columns:1fr}
+}
+
+/* Print: white cards with outlines (browsers skip background colors) */
+@media print{
+  #visiting-guidelines .dress-card{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
+  #visiting-guidelines .dress-badge{border:1px solid #000}
+  #visiting-guidelines .dress-label,
+  #visiting-guidelines .no-list li::before{color:#000}
+  #visiting-guidelines .no-list li{border-bottom-color:#ccc}
+  #visiting-guidelines .dress-note{background:#f3f3f3}
+  #visiting-guidelines .facts-grid{grid-template-columns:1fr}
+}
