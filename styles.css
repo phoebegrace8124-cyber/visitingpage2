@@ -57,10 +57,9 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 }
 
 
-/* ===== Visiting Guidelines section (scoped, won't affect other sections) ===== */
+/* ===== Visiting Guidelines section (scoped) ===== */
 #visiting-guidelines .lead{color:var(--muted);max-width:60ch}
 
-/* Dress code cards */
 #visiting-guidelines .dress-card{
   border-radius:14px;
   padding:1.25rem 1.5rem;
@@ -116,7 +115,6 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   font-size:.95rem;
 }
 
-/* Good to know cards */
 #visiting-guidelines .facts-title{margin:2rem 0 .75rem}
 #visiting-guidelines .facts-grid{grid-template-columns:repeat(3,1fr)}
 #visiting-guidelines .card.fact{border-top:4px solid var(--accent)}
@@ -127,7 +125,6 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   #visiting-guidelines .facts-grid{grid-template-columns:1fr}
 }
 
-/* Print: white cards with outlines (browsers skip background colors) */
 @media print{
   #visiting-guidelines .dress-card{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
   #visiting-guidelines .dress-badge{border:1px solid #000}
@@ -136,4 +133,49 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   #visiting-guidelines .no-list li{border-bottom-color:#ccc}
   #visiting-guidelines .dress-note{background:#f3f3f3}
   #visiting-guidelines .facts-grid{grid-template-columns:1fr}
+}
+
+
+/* ===== Boxed sections (keep this block last) ===== */
+.section-box{
+  width:calc(100% - 2rem);
+  max-width:var(--max-width);
+  margin:1.5rem auto;
+  padding:1.5rem;
+  background:var(--card);
+  border-radius:14px;
+  border-left:6px solid var(--accent);
+  box-shadow:0 6px 18px rgba(20,20,30,0.08);
+}
+.section-box > h3{margin-top:0;color:var(--accent-2)}
+
+.section-box .card{
+  background:var(--bg);
+  box-shadow:none;
+  border-top:3px solid var(--accent);
+}
+
+.callout{
+  background:#fff4f4;
+  border:2px solid var(--accent);
+  border-radius:10px;
+  padding:.75rem 1rem;
+  margin:1rem 0;
+  font-weight:600;
+  color:#111;
+}
+.callout::before{content:"\26A0\FE0F  "}
+
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1rem 0}
+.mini-card{background:var(--bg);border-radius:10px;padding:.75rem 1rem;border-top:3px solid var(--accent)}
+.mini-card strong{display:block;margin-bottom:.25rem}
+
+@media (max-width:720px){
+  .section-box{padding:1.1rem}
+}
+
+@media print{
+  .section-box{width:100%;margin:1rem 0;box-shadow:none;border:1px solid #ddd;border-left:6px solid #000}
+  .callout{background:#fff;border-color:#000}
+  .mini-card,.section-box .card{border-top-color:#000}
 }
