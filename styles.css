@@ -184,3 +184,26 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 .group-title{margin:1.75rem 0 .75rem;padding-bottom:.35rem;border-bottom:2px solid var(--accent);color:var(--accent-2)}
 .org-info{color:var(--muted)}
 .section-box .card h4{margin-top:0}
+
+/* Longer nav, numbered lists, spacing under a card */
+.site-header nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:.25rem}
+ol.schedule-list{padding-left:1.4rem}
+.group-gap{margin-top:1rem}
+@media (max-width:720px){
+  .site-header nav{justify-content:flex-start}
+  .site-header nav a{margin:0 1rem 0 0}
+}
+
+/* CorrLinks red box */
+.corrlinks-box{background:linear-gradient(135deg,var(--accent),#8f1d1d);color:#fff;border-radius:14px;padding:1.25rem 1.5rem;margin:1rem 0;box-shadow:0 8px 22px rgba(20,20,30,0.18)}
+.corrlinks-box h4{margin:0 0 .25rem;font-size:1.3rem}
+.corrlinks-box p{margin:.5rem 0}
+.corrlinks-box ol{padding-left:1.4rem;margin:.75rem 0}
+.corrlinks-box li{margin:.35rem 0}
+.corrlinks-box .btn{background:#fff;color:var(--accent-2);font-weight:700}
+.corrlinks-note{padding:.6rem .8rem;background:rgba(255,255,255,0.14);border-radius:8px;font-size:.95rem}
+
+@media print{
+  .corrlinks-box{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
+  .corrlinks-note{background:#f3f3f3}
+}
