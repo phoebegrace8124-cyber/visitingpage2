@@ -1,4 +1,4 @@
-:root{
+: root{
   --accent:#c33;
   --accent-2:#222;
   --bg:#f6f7fb;
@@ -206,4 +206,10 @@ ol.schedule-list{padding-left:1.4rem}
 @media print{
   .corrlinks-box{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
   .corrlinks-note{background:#f3f3f3}
+}
+
+/* Bigger, bolder section titles */
+.section-box > h3{font-size:1.9rem;font-weight:800;line-height:1.2;margin-bottom:.75rem}
+@media (max-width:720px){
+  .section-box > h3{font-size:1.55rem}
 }
