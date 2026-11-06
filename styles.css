@@ -179,3 +179,8 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   .callout{background:#fff;border-color:#000}
   .mini-card,.section-box .card{border-top-color:#000}
 }
+
+/* Support & Communities */
+.group-title{margin:1.75rem 0 .75rem;padding-bottom:.35rem;border-bottom:2px solid var(--accent);color:var(--accent-2)}
+.org-info{color:var(--muted)}
+.section-box .card h4{margin-top:0}
