@@ -213,3 +213,25 @@ ol.schedule-list{padding-left:1.4rem}
 @media (max-width:720px){
   .section-box > h3{font-size:1.55rem}
 }
+
+/* Contact section: black or red */
+.section-box.dark{background:#111;color:#fff;border-left-color:var(--accent)}
+.section-box.dark > h3{color:#fff}
+.section-box.dark .inline-link{color:#ff8a8a}
+.section-box.dark .btn{background:var(--accent);color:#fff;font-weight:700}
+
+.section-box.red{background:linear-gradient(135deg,var(--accent),#8f1d1d);color:#fff;border-left-color:#111}
+.section-box.red > h3{color:#fff}
+.section-box.red .inline-link{color:#fff}
+.section-box.red .btn{background:#111;color:#fff;font-weight:700}
+
+.section-box.dark .contact-form input,
+.section-box.dark .contact-form textarea,
+.section-box.red .contact-form input,
+.section-box.red .contact-form textarea{background:#fff;color:#111;border-color:transparent}
+
+@media print{
+  .section-box.dark,.section-box.red{background:#fff;color:#000}
+  .section-box.dark > h3,.section-box.red > h3{color:#000}
+  .section-box.dark .inline-link,.section-box.red .inline-link{color:#000}
+}
