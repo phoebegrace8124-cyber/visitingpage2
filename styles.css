@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Montserrat:wght@500;600&display=swap');
 
 :root{
   --accent:#0e7c7b;
@@ -9,23 +9,31 @@
   --card:#fff;
   --muted:#666;
   --max-width:1100px;
+  --radius-lg:24px;
+  --radius-md:18px;
+  --radius-sm:12px;
+  --font-title:Montserrat, Oxygen, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-family: Oxygen, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
 
 *{box-sizing:border-box}
 button,input,textarea{font-family:inherit}
+h1,h2,h3,h4{font-family:var(--font-title);text-transform:uppercase;font-weight:600}
+h1,h2,h3{letter-spacing:.12em}
+h4{letter-spacing:.06em;font-size:.95rem}
+.hero h2{font-size:1.4rem;line-height:1.3}
 body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 .wrap{max-width:var(--max-width);margin:0 auto;padding:1rem}
 .site-header{background:#111;color:#fff;border-bottom:4px solid var(--accent-light)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.site-title{font-size:1.125rem;margin:.5rem 0}
+.site-title{font-size:.95rem;margin:.5rem 0}
 .site-header nav a{color:#fff;text-decoration:none;margin-left:1rem;font-weight:600}
 .hero{padding:2rem 0;background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent)}
 .hero-inner{display:flex;gap:2rem;align-items:flex-start}
 .hero .lead{color:var(--muted);max-width:48ch}
 .hero-side{min-width:220px}
-.card{background:var(--card);border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(20,20,30,0.06)}
+.card{background:var(--card);border-radius:var(--radius-md);padding:1rem;box-shadow:0 6px 18px rgba(20,20,30,0.06)}
 .card.small{padding:.75rem;font-size:.95rem}
 .section{padding:2rem 0}
 .demand-list{list-style:none;padding:0;margin:0.5rem 0 0 0}
@@ -66,7 +74,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 #visiting-guidelines .lead{color:var(--muted);max-width:60ch}
 
 #visiting-guidelines .dress-card{
-  border-radius:14px;
+  border-radius:var(--radius-lg);
   padding:1.25rem 1.5rem;
   color:#fff;
   border-top:6px solid var(--accent-light);
@@ -74,7 +82,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 }
 #visiting-guidelines .dress-card.family{background:linear-gradient(135deg,var(--accent),var(--accent-dark))}
 #visiting-guidelines .dress-card.attorney{background:linear-gradient(135deg,#3a3a3a,var(--accent-2))}
-#visiting-guidelines .dress-card h4{margin:.6rem 0 .25rem;font-size:1.3rem}
+#visiting-guidelines .dress-card h4{margin:.6rem 0 .25rem;font-size:1.05rem}
 #visiting-guidelines .dress-card p{margin:.25rem 0}
 
 #visiting-guidelines .dress-badge{
@@ -117,7 +125,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   margin-top:1rem;
   padding:.6rem .8rem;
   background:rgba(255,255,255,0.14);
-  border-radius:8px;
+  border-radius:var(--radius-sm);
   font-size:.95rem;
 }
 
@@ -149,7 +157,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
   margin:1.5rem auto;
   padding:1.5rem;
   background:var(--card);
-  border-radius:14px;
+  border-radius:var(--radius-lg);
   border-left:6px solid var(--accent);
   box-shadow:0 6px 18px rgba(20,20,30,0.08);
 }
@@ -164,7 +172,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 .callout{
   background:#eefafa;
   border:2px solid var(--accent);
-  border-radius:10px;
+  border-radius:var(--radius-md);
   padding:.75rem 1rem;
   margin:1rem 0;
   font-weight:600;
@@ -173,7 +181,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 .callout::before{content:"\26A0\FE0F  "}
 
 .mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1rem 0}
-.mini-card{background:var(--bg);border-radius:10px;padding:.75rem 1rem;border-top:3px solid var(--accent-light)}
+.mini-card{background:var(--bg);border-radius:var(--radius-md);padding:.75rem 1rem;border-top:3px solid var(--accent-light)}
 .mini-card strong{display:block;margin-bottom:.25rem}
 
 @media (max-width:720px){
@@ -201,13 +209,13 @@ ol.schedule-list{padding-left:1.4rem}
 }
 
 /* CorrLinks teal box */
-.corrlinks-box{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border-top:6px solid var(--accent-light);border-radius:14px;padding:1.25rem 1.5rem;margin:1rem 0;box-shadow:0 8px 22px rgba(20,20,30,0.18)}
-.corrlinks-box h4{margin:0 0 .25rem;font-size:1.3rem}
+.corrlinks-box{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border-top:6px solid var(--accent-light);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1rem 0;box-shadow:0 8px 22px rgba(20,20,30,0.18)}
+.corrlinks-box h4{margin:0 0 .25rem;font-size:1.05rem}
 .corrlinks-box p{margin:.5rem 0}
 .corrlinks-box ol{padding-left:1.4rem;margin:.75rem 0}
 .corrlinks-box li{margin:.35rem 0}
 .corrlinks-box .btn{background:#fff;color:var(--accent-2);font-weight:700}
-.corrlinks-note{padding:.6rem .8rem;background:rgba(255,255,255,0.14);border-radius:8px;font-size:.95rem}
+.corrlinks-note{padding:.6rem .8rem;background:rgba(255,255,255,0.14);border-radius:var(--radius-sm);font-size:.95rem}
 
 @media print{
   .corrlinks-box{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
@@ -215,9 +223,9 @@ ol.schedule-list{padding-left:1.4rem}
 }
 
 /* Bigger, bolder section titles */
-.section-box > h3{font-size:1.9rem;font-weight:800;line-height:1.2;margin-bottom:.75rem}
+.section-box > h3{font-size:1.5rem;font-weight:600;line-height:1.3;margin-bottom:1rem}
 @media (max-width:720px){
-  .section-box > h3{font-size:1.55rem}
+  .section-box > h3{font-size:1.2rem}
 }
 
 /* Contact section: black or teal */
@@ -241,3 +249,6 @@ ol.schedule-list{padding-left:1.4rem}
   .section-box.dark > h3,.section-box.red > h3{color:#000}
   .section-box.dark .inline-link,.section-box.red .inline-link{color:#000}
 }
+
+/* Subtext in italics */
+.lead,.org-info,.dress-note,.corrlinks-note,small{font-style:italic}
