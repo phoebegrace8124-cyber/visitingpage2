@@ -253,7 +253,8 @@ ol.schedule-list{padding-left:1.4rem}
 /* Subtext in italics */
 .lead,.org-info,.dress-note,.corrlinks-note,small{font-style:italic}
 
-/* Dropdown groups (Visit, Contact, Other). Load after styles.css. */
+
+/* ===== Dropdown groups: Visit, Contact, Other (keep at the end so it overrides .section-box padding) ===== */
 .group{padding:0}
 .group > summary,.sub > summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .group > summary::-webkit-details-marker,.sub > summary::-webkit-details-marker{display:none}
@@ -289,4 +290,3 @@ ol.schedule-list{padding-left:1.4rem}
   .group > summary::after,.sub > summary::after{display:none}
   .sub{border-top-color:#ccc}
 }
-
