@@ -208,20 +208,6 @@ ol.schedule-list{padding-left:1.4rem}
   .site-header nav a{margin:0 1rem 0 0}
 }
 
-/* CorrLinks teal box */
-.corrlinks-box{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border-top:6px solid var(--accent-light);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1rem 0;box-shadow:0 8px 22px rgba(20,20,30,0.18)}
-.corrlinks-box h4{margin:0 0 .25rem;font-size:1.05rem}
-.corrlinks-box p{margin:.5rem 0}
-.corrlinks-box ol{padding-left:1.4rem;margin:.75rem 0}
-.corrlinks-box li{margin:.35rem 0}
-.corrlinks-box .btn{background:#fff;color:var(--accent-2);font-weight:700}
-.corrlinks-note{padding:.6rem .8rem;background:rgba(255,255,255,0.14);border-radius:var(--radius-sm);font-size:.95rem}
-
-@media print{
-  .corrlinks-box{background:#fff !important;color:#000;border:1px solid #000;box-shadow:none}
-  .corrlinks-note{background:#f3f3f3}
-}
-
 /* Bigger, bolder section titles */
 .section-box > h3{font-size:1.5rem;font-weight:600;line-height:1.3;margin-bottom:1rem}
 @media (max-width:720px){
