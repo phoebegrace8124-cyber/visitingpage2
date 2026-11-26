@@ -281,7 +281,7 @@ html{scroll-behavior:smooth}
 
 /* Smaller section: "What you can and can't bring" */
 .part.compact{font-size:.92rem}
-.part.compact .part-title{font-size:1rem}
+.part.compact .part-title{font-size:1.2rem}
 .compact .schedule-list{margin:.4rem 0 0}
 .compact .mini-card{padding:.6rem .8rem}
 .compact .callout{font-size:.9rem;padding:.6rem .8rem}
@@ -315,5 +315,12 @@ html{scroll-padding-top:var(--sticky-h,11rem)}
 /* ===== Parts inside a combined section (Visits, Contact) ===== */
 .part{margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid #e3e6ee}
 .section-box > h3 + .part{margin-top:0;padding-top:0;border-top:0}
-.part-title{margin:0 0 .75rem;font-size:1.2rem;letter-spacing:.1em;color:var(--accent)}
+.part-title{margin:0 0 .75rem;font-family:var(--hero-font,var(--font-title));font-size:1.4rem;letter-spacing:.08em;color:var(--accent)}
 @media print{.part{border-top-color:#ccc}}
+
+/* Section headings use the same font as the hero heading */
+.section-box > h3{font-family:var(--hero-font,var(--font-title));font-size:1.8rem;letter-spacing:.06em}
+@media (max-width:720px){
+  .section-box > h3{font-size:1.5rem}
+  .part-title{font-size:1.2rem}
+}
