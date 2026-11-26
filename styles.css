@@ -8,7 +8,7 @@
   --bg:#f6f7fb;
   --card:#fff;
   --muted:#666;
-  --max-width:1200px;
+  --max-width:1400px;
   --radius-lg:24px;
   --radius-md:18px;
   --radius-sm:12px;
@@ -152,10 +152,10 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 
 /* ===== Boxed sections (keep this block last) ===== */
 .section-box{
-  width:calc(100% - 1rem);
+  width:calc(100% - 1.5rem);
   max-width:var(--max-width);
   margin:1.5rem auto;
-  padding:1.5rem 1rem;
+  padding:1.5rem;
   background:var(--card);
   border-radius:var(--radius-lg);
   border-left:6px solid var(--accent);
@@ -185,7 +185,7 @@ body{margin:0;background:var(--bg);color:#111;line-height:1.45}
 .mini-card strong{display:block;margin-bottom:.25rem}
 
 @media (max-width:720px){
-  .section-box{padding:1.1rem .85rem}
+  .section-box{width:calc(100% - .75rem);padding:1.1rem 1rem}
 }
 
 @media print{
@@ -280,7 +280,7 @@ html{scroll-behavior:smooth}
 }
 
 /* Smaller section: "What you can and can't bring" */
-.section-box.compact{padding:1.1rem 1rem;font-size:.92rem}
+.section-box.compact{padding:1.1rem 1.25rem;font-size:.92rem}
 .section-box.compact > h3{font-size:1.15rem;margin-bottom:.6rem}
 .compact .schedule-list{margin:.4rem 0 0}
 .compact .mini-card{padding:.6rem .8rem}
