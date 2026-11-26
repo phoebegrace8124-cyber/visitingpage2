@@ -1,609 +1,689 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Toolkit — Metropolitan Detention Center Toolkit</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Action toolkit for supporting people incarcerated at PRISON_NAME. How to help, schedule, downloadable materials, and resources." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Toolkit — Metropolitan Detention Center Toolkit</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="dropdowns.css" />
+<meta name="description" content="Action toolkit for supporting people incarcerated at PRISON_NAME. How to help, schedule, downloadable materials, and resources." />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1 class="site-title">Metropolitan Detention Center Toolkit</h1>
-      <nav aria-label="Main navigation">
-        <a href="#schedule">Schedule</a>
-        <a href="#visiting-guidelines">Guidelines</a>
-        <a href="#transit">Transit</a>
-        <a href="#actions">Lawyers</a>
-        <a href="#case-status">Case Status</a>
-        <a href="#mail">Mail</a>
-        <a href="#phone-calls">Calls</a>
-        <a href="#marriage">Marriage</a>
-        <a href="#bonds">Bonds</a>
-        <a href="#support">Support</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="wrap hero-inner">
-        <div>
-          <h2 id="hero-title">Take action to support people at MDC Brooklyn</h2>
-          <p class="lead">This toolkit explains what’s happening, when events are planned, and practical ways to support loved ones and amplify the message.</p>
-          <p class="hero-cta">
-            <a class="btn primary" href="#download" id="downloadBtn">Download toolkit (PDF)</a>
-            <button class="btn" id="printBtn">Print</button>
-            <a class="btn ghost" href="#share" id="shareBtn">Share</a>
-          </p>
-        </div>
-        <aside class="hero-side" aria-hidden="false">
-          <div class="card small">
-            <strong> ANNOUNCEMENTS </strong>
-            <p>.....</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!--
-    <section id="translations" class="wrap section section-box" aria-labelledby="translations-title">
-      <h3 id="translations-title">Translations</h3>
-      <p>Translated versions: <a href="?lang=es">Español</a> · <a href="?lang=fr">Français</a></p>
-    </section>
-
-    <section id="overview" class="wrap section section-box" aria-labelledby="overview-title">
-      <h3 id="overview-title">Overview</h3>
-      <p>This section briefly explains the context: who is impacted, a summary of demands, and why people should take action.</p>
-      <ul class="demand-list" aria-label="Demands">
-        <li><strong>Demand 1:</strong> Short description.</li>
-        <li><strong>Demand 2:</strong> Short description.</li>
-        <li><strong>Demand 3:</strong> Short description.</li>
-      </ul>
-    </section>
-    -->
-
-    <section id="schedule" class="wrap section section-box" aria-labelledby="schedule-title">
-      <h3 id="schedule-title">Legal Visiting Hours</h3>
-      <p class="callout">Call 718-840-4200 to confirm hours before you travel.</p>
-
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Monday - Friday</strong>
-          8:00 a.m. - 7:30 p.m.<br>Count time: 4:00 p.m. - 5:00 p.m.
-        </div>
-        <div class="mini-card">
-          <strong>Saturday/Sunday</strong>
-          8:00 a.m. - 3:00 p.m.<br>Count time: 10:00 a.m. - 11:00 a.m.
-        </div>
-        <div class="mini-card">
-          <strong>Federal Holidays</strong>
-          8:00 a.m. - 3:00 p.m.<br>Count time: 10:00 a.m. - 11:00 a.m.
-        </div>
-      </div>
-
-      <h4>Important - Count Time</h4>
-      <ul class="schedule-list">
-        <li><strong>Count time</strong> means the prison pauses entry and exit and suspends movement, which causes delays and prevents admission. It takes 60 minutes or more to clear.</li>
-        <li>No processing of attorneys or visitors from 3:00 p.m. until the count clears (9:00 a.m. on Saturdays, Sundays, and federal holidays). Attorneys who arrive within an hour before a count will not be able to visit their client until the count clears.</li>
-        <li><strong>Exclusive attorney visiting hours:</strong> Monday - Friday, 8:00 a.m. - 12:00 p.m. There are no social visits during these hours.</li>
-        <li>Legal visits during these hours do not need to be scheduled in advance.</li>
-        <li><strong>Special legal visits</strong> outside these hours: request through MDC Brooklyn's Legal Department with at least two business days' notice. Email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>.</li>
-      </ul>
-    </section>
-
-    <section id="family-visits" class="wrap section section-box" aria-labelledby="family-title">
-      <h3 id="family-title">Family and Friends Visitation</h3>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Saturday</strong>
-          8:00 a.m. - 12:00 p.m., based on the detainee's housing unit
-          (<a class="inline-link" href="https://www.ice.gov/detain/detention-facilities/mdc-brooklyn">details</a>)
-        </div>
-        <div class="mini-card">
-          <strong>Monday - Friday</strong>
-          12:00 p.m. - 3:00 p.m.<br>5:00 p.m. - 7:30 p.m.
-        </div>
-      </div>
-    </section>
-
-    <section id="hospital-visits" class="wrap section section-box" aria-labelledby="hospital-title">
-      <h3 id="hospital-title">Visits at Local Hospitals</h3>
-      <ul class="schedule-list">
-        <li><strong>U.S. Marshals Service (not yet sentenced):</strong> People housed at a local hospital or nursing home are handled by the U.S. Marshals Service, which will tell you what additional information is required and can approve or deny the visit.
-          <ul>
-            <li>Eastern District of NY, Brooklyn: Peter Lee, <a class="inline-link" href="mailto:peter.lee@usdoj.gov">peter.lee@usdoj.gov</a>, 718-473-3014</li>
-            <li>Eastern District of NY, Central Islip: Melanie Macaluso, 631-715-6160</li>
-            <li>Southern District of NY: Criminal Section Supervisor, <a class="inline-link" href="mailto:USMS.NYSCrimSec@usdoj.gov">USMS.NYSCrimSec@usdoj.gov</a>, 646-563-9808</li>
-          </ul>
-        </li>
-        <li><strong>BOP Incarcerated Individual:</strong> Legal visit requests go to MDC's legal attorneys, then to the Warden for final approval. If the person has been designated but not yet moved to their institution, email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>. For legal calls with BOP custody, the call is scheduled through the appropriate channels.</li>
-        <li><strong>Social visits:</strong> Email <a class="inline-link" href="mailto:BRO-ExecAssistant-S@bop.gov">BRO-ExecAssistant-S@bop.gov</a>. The request goes from the Unit Team to the Warden for approval.</li>
-      </ul>
-    </section>
-
-    <section id="visiting-guidelines" class="wrap section section-box" aria-labelledby="guidelines-title">
-      <h3 id="guidelines-title">Visiting Guidelines</h3>
-      <p class="lead">What to wear and what to expect. Visitors can be denied entry for inappropriate clothing, so plan ahead.</p>
-
-      <div class="grid dress-grid">
-        <div class="dress-card family">
-          <span class="dress-badge">Families &amp; Friends</span>
-          <h4>What to wear</h4>
-          <p>Dress as you would for a large gathering of men, women, and young children.</p>
-
-          <strong class="dress-label">Do not wear</strong>
-          <ul class="no-list">
-            <li><strong>Anything green</strong>, or khaki / military-style clothing (looks like incarcerated individual clothing)</li>
-            <li><strong>Shiny buttons</strong></li>
-            <li><strong>Underwire bras</strong></li>
-            <li><strong>Sweatshirts</strong>, hoods, or coats (they can hide contraband)</li>
-            <li><strong>Hats or caps</strong></li>
-            <li><strong>Tight shirts</strong> (shirts for women should not be too tight)</li>
-            <li>Revealing, see-through, or low-cut clothing, including crop tops, halter tops, backless tops, sleeveless garments, leotards, spandex, and bathing suits</li>
-            <li>Revealing shorts, miniskirts, or skirts two inches or more above the knee</li>
-            <li>Dresses or skirts with a high-cut slit in the front, back, or side</li>
-          </ul>
-          <p class="dress-note">Rules can vary by facility. When in doubt, choose something loose, plain, and modest.</p>
-        </div>
-
-        <div class="dress-card attorney">
-          <span class="dress-badge">Attorneys</span>
-          <h4>What to wear</h4>
-          <p>All visitors, including attorneys, must dress appropriately for a correctional environment.</p>
-
-          <strong class="dress-label">Do not wear</strong>
-          <ul class="no-list">
-            <li><strong>Khaki or tan pants</strong> (same color as incarcerated individual clothing)</li>
-            <li><strong>Hoods or coats</strong> (they can easily hide contraband)</li>
-            <li><strong>Provocative or revealing clothing</strong></li>
-          </ul>
-          <p class="dress-note"><strong>The duty officer has the final say</strong> on whether attire is appropriate inside the visiting room.</p>
-        </div>
-      </div>
-
-      <h4 class="facts-title">Good to know</h4>
-      <div class="grid facts-grid">
-        <div class="card fact">
-          <strong>Visiting duration</strong>
-          <p>By law, an incarcerated individual gets at least four hours of visiting time per month, and the prison can often provide more. The Warden can limit the length of visits or the number of visitors at once to prevent overcrowding.</p>
-        </div>
-        <div class="card fact">
-          <strong>General behavior</strong>
-          <p>Visits must be quiet, orderly, and dignified. The visiting room officer can require you to leave if you or the incarcerated individual is not behaving appropriately.</p>
-        </div>
-        <div class="card fact">
-          <strong>Physical contact</strong>
-          <p>Handshakes, hugs, and kisses (in good taste) are usually allowed at the start and end of a visit. Staff may limit contact for security reasons. Conjugal visits are not permitted.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="transit" class="wrap section section-box" aria-labelledby="transit-title">
-      <h3 id="transit-title">Directions to MDC Brooklyn</h3>
-
-      <div class="card">
-        <strong>Address</strong>
-        <p>
-          80 29th Street, Brooklyn, NY 11232<br>
-          Between Second and Third Avenues, Sunset Park<br>
-          Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
-        </p>
-        <p>
-          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=80+29th+Street+Brooklyn+NY+11232">Open in Google Maps</a>
-        </p>
-      </div>
-
-      <h4>By Public Transportation</h4>
-      <ul class="schedule-list">
-        <li><strong>Subway:</strong> Take the R train to 25th Street, then walk a short distance south and west to 29th Street.</li>
-        <li><strong>Alternative:</strong> The D, N, and R trains stop at 36th Street (36th Street &amp; 4th Avenue).</li>
-      </ul>
-
-      <h4>By Car</h4>
-      <ul class="schedule-list">
-        <li>The facility is one block from the Gowanus Expressway. Enter the address above into your GPS for current directions.</li>
-        <li>Parking is limited near the facility, so public transportation is recommended.</li>
-      </ul>
-
-      <p><small>Call before you travel to confirm visiting days and times.</small></p>
-    </section>
-
-    <section id="actions" class="wrap section section-box" aria-labelledby="actions-title">
-      <h3 id="actions-title">Immigration Lawyers</h3>
-
-      <div class="grid">
-        <article class="card">
-          <h4>Marisol Conde-Hernandez</h4>
-          <p><strong>Phone number: </strong> (973) 306 4246 (ask for Marisol)</p>
-          <p><em>Info:</em> Also handles criminal matters.</p>
-          <p><strong>Address: </strong> 96 Summer Avenue, Newark, NJ</p>
-          <a class="btn small" href="https://ericmarklaw.com/marisol-conde-hernandez" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Larry LeRoy</h4>
-          <p><strong>Phone number: </strong> (973) 482 4249</p>
-          <p><strong>Address: </strong> 228 Mount Prospect Avenue, Newark, NJ</p>
-          <a class="btn small" href="https://njimmigrationattorneys.com/" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Seham K. Elmalak</h4>
-          <p><strong>Phone number: </strong> (973) 370 3014</p>
-          <p><em>Info:</em> Takes non-removal and SIJS cases.</p>
-          <p><strong>Address: </strong> 339 Lafayette St (FL. 1), Newark, NJ</p>
-          <a class="btn small" href="https://facebook.com/elmalaklaw" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Kiomeiry Csépes</h4>
-          <p><strong>Phone number: </strong> (609) 241 7111</p>
-          <p><strong>Address: </strong> 184 South Broad Street, Trenton, NJ</p>
-          <a class="btn small" href="https://csepeslaw.com/" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Ludka Zimovcak</h4>
-          <p><strong>Phone number: </strong> (201) 670 0006 ext. 105</p>
-          <p><em>Info:</em> Nachman, Phulwani, Zimovcak (NPZ) Law Group, P.C.</p>
-          <p><strong>Address: </strong> 487 Goffle Road, Ridgewood, NJ</p>
-          <a class="btn small" href="mailto:ludka_zimovcak@visaserve.com">Email</a>
-        </article>
-
-        <article class="card">
-          <h4>Claudia Bernal Pérez</h4>
-          <p><strong>Phone number: </strong> (929) 527 3100</p>
-          <p><strong>Address: </strong> 100 Church Street (Suite 800), New York, NY</p>
-          <a class="btn small" href="https://bplawpc.com/" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Brian O’Neill</h4>
-          <p><strong>Phone numbers: </strong> (973) 978 4355 (Español) · (201) 803 2126 (English) · (201) 803 3615 (Russian)</p>
-          <p><strong>Address: </strong> 55 Madison Avenue (Suite 400), Morristown, NJ</p>
-          <a class="btn small" href="https://oneill-law.net/" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Nakeisha Radway</h4>
-          <p><strong>Phone number: </strong> (917) 268 7621</p>
-          <p><strong>Address: </strong> 3171 US Highway 9 N Suite 37, Old Bridge, NJ</p>
-          <a class="btn small" href="https://radwaylawgroup.com/" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Cheryln Lin</h4>
-          <p><strong>Phone number: </strong> (201) 565 2437</p>
-          <p><em>Info:</em> Takes all cases.</p>
-          <p><strong>Address: </strong> Jersey City, Hudson County</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="case-status" class="wrap section section-box" aria-labelledby="case-status-title">
-      <h3 id="case-status-title">Case Status (EOIR)</h3>
-      <p class="callout">You need the person's alien registration number (A-number): the letter A followed by 8 or 9 digits.</p>
-      <p>Call the Executive Office for Immigration Review (EOIR) at any time to get case status information.</p>
-      <p><a class="btn primary" href="tel:18008987180">Call 1-800-898-7180</a></p>
-
-      <h4>What you can find out</h4>
-      <ul class="schedule-list">
-        <li>Next hearing date, time, and location</li>
-        <li>Case processing information</li>
-        <li>Immigration judge decision outcome and date</li>
-        <li>Board of Immigration Appeals (BIA) appeal information, including appeal due date, brief due date, and decision outcome and date</li>
-        <li>Filing information</li>
-      </ul>
-
-      <p><a class="btn" href="https://www.justice.gov/eoir/customer-service-initiatives" target="_blank" rel="noopener">EOIR case status &amp; BIA case status</a></p>
-    </section>
-
-    <section id="mail" class="wrap section section-box" aria-labelledby="mail-title">
-      <h3 id="mail-title">Mail &amp; Email</h3>
-
-      <div class="card">
-        <strong>Mailing address</strong>
-        <p>
-          Full committed name and register number<br>
-          MDC Brooklyn<br>
-          Metropolitan Detention Center<br>
-          P.O. Box 329002<br>
-          Brooklyn, NY 11232
-        </p>
-        <ul class="schedule-list">
-          <li>Always include the person's register number. Mail without it may be returned.</li>
-          <li>For ICE detainees, also include the last four digits of the A-number, plus your own name and address.</li>
-          <li>Do not send money to this address.</li>
-        </ul>
-      </div>
-
-      <div class="corrlinks-box">
-        <h4>Set up CorrLinks email</h4>
-        <p>People at MDC Brooklyn can send and receive monitored email through CorrLinks. You cannot start the conversation: the person inside has to add you first.</p>
-        <ol>
-          <li>The person adds you as a contact. You receive an email with a link and an identification code.</li>
-          <li>Use the link to accept (or block) the request.</li>
-          <li>Register using the same email address that got the invitation, plus the identification code.</li>
-          <li>Check your email for a verification link, then sign in to send and receive messages.</li>
-        </ol>
-        <p><a class="btn" href="https://icsolutions.com/corrections/docs/corrlinks_instructions_en_icscorrections.pdf" target="_blank" rel="noopener">Open the setup instructions (PDF)</a></p>
-        <p class="corrlinks-note">This guide was written for Oregon's system, so its first steps and any fees may not match MDC Brooklyn. The invitation and registration steps work the same way.</p>
-      </div>
-
-      <div class="grid group-gap">
-        <article class="card">
-          <h4>Email (TRULINCS)</h4>
-          <ul class="schedule-list">
-            <li>Most people at MDC Brooklyn have access to email, which staff monitor.</li>
-            <li>Accounts are set up through TRULINCS and need prior approval.</li>
-            <li>Recipients must first respond to the initial email to confirm they want to receive emails from a federal incarcerated individual.</li>
-            <li>Recipients can accept or block all future electronic communication from the person.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h4>Incoming mail</h4>
-          <ul class="schedule-list">
-            <li>Mail is processed on a 5-day schedule (Monday - Friday).</li>
-            <li>All correspondence is photocopied, and the person only receives the photocopy. Special mail and legal mail envelopes are not photocopied.</li>
-            <li><strong>MDC will reject:</strong> commercial greeting cards; anything with glitter, stickers, lipstick, crayon, or marker; oily substances or fragrances.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h4>Outgoing mail</h4>
-          <ul class="schedule-list">
-            <li>Address it properly and include the person's full name, register number, and full return address, including MDC Brooklyn.</li>
-            <li>It is reviewed beforehand and unsealed.</li>
-            <li>Staff may randomly read it and seal it.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h4>Legal mail</h4>
-          <ul class="schedule-list">
-            <li>Mark the envelope <strong>"Special mail - open only in the presence of the person who is incarcerated"</strong> so it is not opened and stays confidential.</li>
-            <li>The sender should identify themselves and their firm or organization on the envelope.</li>
-            <li>All legal and special mail packages are X-rayed before entry.</li>
-            <li>Packages are opened in front of the person.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="phone-calls" class="wrap section section-box" aria-labelledby="phone-title">
-      <h3 id="phone-title">Phone Calls</h3>
-
-      <h4>Calls with attorneys</h4>
-      <ul class="schedule-list">
-        <li><strong>Pretrial person who is incarcerated</strong> can use unmonitored phones in the housing units and call the Federal Public Defender's Office of the Southern and Eastern Districts directly, free of charge.</li>
-        <li><strong>People with private attorneys</strong> use the regular person who is incarcerated telephone, which is recorded.</li>
-        <li>Attorney calls are not allowed for social reasons.</li>
-      </ul>
-
-      <h4>Unmonitored attorney calls</h4>
-      <ul class="schedule-list">
-        <li>An occasional unmonitored call to an attorney is allowed. These calls fall under the special mail provisions for confidentiality.</li>
-        <li>Frequent confidential calls are only allowed when the person shows that correspondence, visiting, and normal telephone use are not adequate, for example because of an imminent court deadline. Once that is shown, the Warden cannot limit how often they call their attorney.</li>
-        <li>To get an unmonitored call, the person or their attorney must request approval from the Unit Team and the Legal Department.</li>
-      </ul>
-
-      <h4>Emergency calls</h4>
-      <p class="callout">Emergency calls are only for the death or serious illness of an immediate family member.</p>
-      <ul class="schedule-list">
-        <li>Request the call through the Religious Services Department or Unit Management.</li>
-        <li>To reach someone for an emergency, call the main number (<a class="inline-link" href="tel:7188404200">718-840-4200</a>) and ask for the Religious Services Department, Unit Management, or the appropriate Unit Team.</li>
-      </ul>
-    </section>
-
-    <section id="marriage" class="wrap section section-box" aria-labelledby="marriage-title">
-      <h3 id="marriage-title">Getting Married While Incarcerated</h3>
-
-      <h4>How it works</h4>
-      <ol class="schedule-list">
-        <li>The person submits a written request to marry through their case manager. It goes to their unit team.</li>
-        <li>The unit team reviews the request and sends a written report of its findings and recommendation to the Warden.</li>
-        <li>The Warden decides and notifies the person in writing. A copy goes in their central file.</li>
-        <li>If the request is denied, the decision can be appealed through the Administrative Remedy Procedure.</li>
-      </ol>
-
-      <h4>Requirements</h4>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Legally eligible</strong>
-          If the person is or was married, written verification that the marriage was legally dissolved is required.
-        </div>
-        <div class="mini-card">
-          <strong>Mentally competent</strong>
-          The person must be mentally competent to marry.
-        </div>
-        <div class="mini-card">
-          <strong>Spouse confirms</strong>
-          The intended spouse must verify their intention to marry, usually in writing.
-        </div>
-      </div>
-
-      <p>The Warden approves the request unless there is a legal restriction, or the marriage would threaten the security or good order of the institution or the protection of the public.</p>
-      <p class="callout">All marriage expenses, such as the marriage license, are paid by the person who is incarcerated, their intended spouse, their family, or another source approved by the Warden.</p>
-    </section>
-
-    <section id="bonds" class="wrap section section-box" aria-labelledby="bonds-title">
-      <h3 id="bonds-title">Bonds</h3>
-      <p>Bonds are processed through the U.S. District Court Clerk's Office.</p>
-    </section>
-
-    <section id="support" class="wrap section section-box" aria-labelledby="support-title">
-      <h3 id="support-title">Support &amp; Communities</h3>
-      <p class="lead">Groups that offer support, advocacy, and community for people who are incarcerated and their families. Call or email first to confirm services and hours.</p>
-
-      <h4 class="group-title">Community organizing &amp; advocacy</h4>
-      <div class="grid">
-        <article class="card">
-          <h4>Communities Not Cages</h4>
-          <p class="org-info">A campaign led by impacted people and families across New York State to end mass incarceration and ICE detentions. If you are looking for a community or want to take part in advocacy, get in touch.</p>
-          <p><strong>Phone (Center for Community Alternatives, CNC organizer): </strong> <a class="inline-link" href="tel:5853288230">585-328-8230</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:TGant@communityalternatives.org">TGant@communityalternatives.org</a></p>
-          <a class="btn small" href="https://www.communityalternatives.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Alliance of Families for Justice</h4>
-          <p class="org-info">Supports, empowers, and mobilizes families of people who are or were incarcerated so they can work together for systemic change. Offers free legal and behavioral health services.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:3479730580">(347) 973-0580</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:admin@afj-ny.org">admin@afj-ny.org</a></p>
-          <p><strong>Address: </strong> 8 W 126th St, Fl 3, New York, NY 10027 (WeWork Harlem, between 5th Ave &amp; Malcolm X Blvd)</p>
-          <a class="btn small" href="https://www.afj-ny.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>The National Council for Incarcerated and Formerly Incarcerated Women and Girls</h4>
-          <p class="org-info">A non-profit that advocates for the complete abolition of the incarceration of women and girls. Home of the #FreeHer movement.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:6172992604">617-299-2604</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:info@thecouncil.us">info@thecouncil.us</a></p>
-          <p><strong>Address: </strong> 100R Warren Street, Roxbury, MA 02119</p>
-          <a class="btn small" href="https://www.thecouncil.us" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>New Hour for Women and Children</h4>
-          <p class="org-info">Supports and empowers incarcerated, formerly incarcerated, and justice-impacted women, mothers, and their families. Advocates for criminal justice and reproductive reforms in NY, including the Compassion and Reproductive Equity Act to prevent infant-mother separation during incarceration.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:6312733300">631-273-3300</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:contactus@newhourli.org">contactus@newhourli.org</a></p>
-          <p><strong>Address: </strong> 1725 Brentwood Rd, Brentwood, NY 11717</p>
-          <a class="btn small" href="https://www.newhourli.org" target="_blank" rel="noopener">Website</a>
-        </article>
-      </div>
-
-      <h4 class="group-title">Support for families &amp; children</h4>
-      <div class="grid">
-        <article class="card">
-          <h4>Osborne Association</h4>
-          <p class="org-info">Serves people and families affected by incarceration, with services for children and families, court advocacy, and reentry. Runs a free transportation program from Brooklyn and the Bronx to state prisons upstate.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:7186376560">718-637-6560</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:info@osborneny.org">info@osborneny.org</a></p>
-          <p><strong>Court services: </strong> <a class="inline-link" href="mailto:courtadvocacy@osborneny.org">courtadvocacy@osborneny.org</a></p>
-          <p><strong>Address: </strong> 175 Remsen St, Brooklyn, NY 11201</p>
-          <a class="btn small" href="https://www.osborneny.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Prison Families Alliance</h4>
-          <p class="org-info">Peer support for families and friends of people in the criminal justice system, including online support meetings and practical guidance for families.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:7027631389">(702) 763-1389</a> (Mon-Fri, 8:00 a.m. - 5:00 p.m. PT)</p>
-          <p><strong>NY local contact (call or text): </strong> (516) 326-0797 or (718) 347-7284 (NAMI Queens / Nassau)</p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:connect@prisonfamiliesalliance.org">connect@prisonfamiliesalliance.org</a></p>
-          <p><strong>Address: </strong> 4800 Alpine Place, Suite 7, Las Vegas, NV 89107</p>
-          <a class="btn small" href="https://www.prisonfamiliesalliance.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Children of Promise, NYC</h4>
-          <p class="org-info">Supports children of incarcerated parents in Brooklyn and helps them thrive.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:7184839290">718-483-9290</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:info@cpnyc.org">info@cpnyc.org</a></p>
-          <p><strong>Address: </strong> 53 MacDonough St, Brooklyn, NY 11216</p>
-          <a class="btn small" href="https://www.cpnyc.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Women’s Prison Association</h4>
-          <p class="org-info">Services and advocacy for women involved in the criminal legal system and their families, including reentry support.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:6462927710">646-292-7710</a> (or 646-292-7740)</p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:info@wpaonline.org">info@wpaonline.org</a> or <a class="inline-link" href="mailto:programs@wpaonline.org">programs@wpaonline.org</a></p>
-          <p><strong>Address: </strong> 347 East 10th Street, New York, NY 10009</p>
-          <a class="btn small" href="https://www.wpaonline.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-      </div>
-
-      <h4 class="group-title">Case guidance &amp; legal reform</h4>
-      <div class="grid">
-        <article class="card">
-          <h4>The Criminal Justice Realm (TCJR)</h4>
-          <p class="org-info">Consulting and crisis management organization guiding individuals and families from indictment through trial, incarceration, and appeal. Offers case monitoring, fact-checking, and more.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:13022178387">1 (302) 217-8387</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:assistance@criminaljusticerealm.com">assistance@criminaljusticerealm.com</a></p>
-          <p><strong>Address: </strong> 16192 Coastal Hwy, Lewes, DE</p>
-          <a class="btn small" href="https://www.criminaljusticerealm.com" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>Innocence Project</h4>
-          <p class="org-info">Works to free people who have been wrongfully convicted and to reform the legal system to prevent future wrongful convictions.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:2123645340">212-364-5340</a></p>
-          <p><strong>Address: </strong> 40 Worth Street, Suite 701, New York, NY 10013</p>
-          <a class="btn small" href="https://innocenceproject.org" target="_blank" rel="noopener">Website</a>
-        </article>
-
-        <article class="card">
-          <h4>The Marshall Project</h4>
-          <p class="org-info">A non-profit newsroom covering the U.S. criminal justice system. A good source for reporting on what is happening in prisons and courts.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:2128035200">(212) 803-5200</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:info@themarshallproject.org">info@themarshallproject.org</a></p>
-          <p><strong>Address: </strong> Studio Cityspire, 156 West 56th Street, 3rd Floor, New York, NY 10019</p>
-          <a class="btn small" href="https://www.themarshallproject.org" target="_blank" rel="noopener">Website</a>
-        </article>
-        
-        <article class="card">
-          <h4>Prisoners' Legal Services of New York (PLSNY)</h4>
-          <p class="org-info">Investigates allegations of abuse, brutality, and medical neglect; provides legal representation; advocates for access to education, healthcare, family visits, and protection from solitary confinement. Helps ensure incarcerated people are heard and treated fairly.</p>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:5184388046">(518) 438-8046</a></p>
-          <p><strong>Email: </strong> <a class="inline-link" href="mailto:jfeldman@plsny.org">jfeldman@plsny.org</a></p>
-          <p><strong>Address: </strong> 50 Beaver Street, 5th Floor, Albany, NY 12207</p>
-          <a class="btn small" href="https://plsny.org/offices/" target="_blank" rel="noopener">Website</a>
-        </article>
-      </div>
-
-      <h4 class="group-title">Faith community</h4>
-      <div class="grid">
-        <article class="card">
-          <h4>Good Shepherd Lutheran Church</h4>
-          <p><strong>Phone: </strong> <a class="inline-link" href="tel:7187458520">718-745-8520</a></p>
-          <p><strong>Address: </strong> 74-20 4th Ave, Brooklyn, NY 11209</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="wrap section section-box dark" aria-labelledby="contact-title">
-      <h3 id="contact-title">Contact Us</h3>
-      <p><strong>The Remedy Project</strong> — Email: <a class="inline-link" href="mailto:admin@theremedyproj.org">admin@theremedyproj.org</a> — Phone: <a class="inline-link" href="tel:9292490141">929-249-0141</a></p>
-      <p>To report updates or request additions to this page, email the organizer or use the form below.</p>
-
-      <form class="contact-form" aria-label="Contact form" method="post" action="#">
-        <label>
-          Your name
-          <input name="name" type="text" required />
-        </label>
-        <label>
-          Email
-          <input name="email" type="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </section>
-
-    <footer class="site-footer">
-      <div class="wrap">
-        <small>© <span id="year"></span> The Remedy Project </small>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('printBtn').addEventListener('click', function () {
-      window.print();
-    });
-    document.getElementById('downloadBtn').addEventListener('click', function (e) {
-      location.href = 'toolkit.pdf';
-    });
-  </script>
+<header class="site-header">
+<div class="wrap">
+<h1 class="site-title">Metropolitan Detention Center Toolkit</h1>
+<nav aria-label="Main navigation">
+<a href="#visit">Visit</a>
+<a href="#contact-info">Contact</a>
+<a href="#case-status">Case Status</a>
+<a href="#bonds">Bonds</a>
+<a href="#actions">Lawyers</a>
+<a href="#support">Support</a>
+<a href="#marriage">Marriage</a>
+<a href="#contact">Contact Us</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="top" aria-labelledby="hero-title">
+<div class="wrap hero-inner">
+<div>
+<h2 id="hero-title">Take action to support people at MDC Brooklyn</h2>
+<p class="lead">This toolkit explains what’s happening, when events are planned, and practical ways to support loved ones and amplify the message.</p>
+<p class="hero-cta">
+<a class="btn primary" href="#download" id="downloadBtn">Download toolkit (PDF)</a>
+<button class="btn" id="printBtn">Print</button>
+<a class="btn ghost" href="#share" id="shareBtn">Share</a>
+</p>
+</div>
+<aside class="hero-side" aria-hidden="false">
+<div class="card small">
+<strong> ANNOUNCEMENTS </strong>
+<p>.....</p>
+</div>
+</aside>
+</div>
+</section>
+
+<!--
+<section id="translations" class="wrap section section-box" aria-labelledby="translations-title">
+<h3 id="translations-title">Translations</h3>
+<p>Translated versions: <a href="?lang=es">Español</a> · <a href="?lang=fr">Français</a></p>
+</section>
+
+<section id="overview" class="wrap section section-box" aria-labelledby="overview-title">
+<h3 id="overview-title">Overview</h3>
+<p>This section briefly explains the context: who is impacted, a summary of demands, and why people should take action.</p>
+<ul class="demand-list" aria-label="Demands">
+<li><strong>Demand 1:</strong> Short description.</li>
+<li><strong>Demand 2:</strong> Short description.</li>
+<li><strong>Demand 3:</strong> Short description.</li>
+</ul>
+</section>
+-->
+
+<!-- ===== DROPDOWN 1: VISIT ===== -->
+<details class="group section-box" id="visit">
+<summary><h3>Visit</h3></summary>
+<div class="group-body">
+
+<details class="sub" id="schedule">
+<summary><h4 class="sub-title">Time</h4></summary>
+<div class="sub-body">
+<h5>Legal Visiting Hours</h5>
+<p class="callout">Call 718-840-4200 to confirm hours before you travel.</p>
+<div class="mini-grid">
+<div class="mini-card">
+<strong>Monday - Friday</strong>
+8:00 a.m. - 7:30 p.m.<br>Count time: 4:00 p.m. - 5:00 p.m.
+</div>
+<div class="mini-card">
+<strong>Saturday/Sunday</strong>
+8:00 a.m. - 3:00 p.m.<br>Count time: 10:00 a.m. - 11:00 a.m.
+</div>
+<div class="mini-card">
+<strong>Federal Holidays</strong>
+8:00 a.m. - 3:00 p.m.<br>Count time: 10:00 a.m. - 11:00 a.m.
+</div>
+</div>
+
+<h5>Important - Count Time</h5>
+<ul class="schedule-list">
+<li><strong>Count time</strong> means the prison pauses entry and exit and suspends movement, which causes delays and prevents admission. It takes 60 minutes or more to clear.</li>
+<li>No processing of attorneys or visitors from 3:00 p.m. until the count clears (9:00 a.m. on Saturdays, Sundays, and federal holidays). Attorneys who arrive within an hour before a count will not be able to visit their client until the count clears.</li>
+<li><strong>Exclusive attorney visiting hours:</strong> Monday - Friday, 8:00 a.m. - 12:00 p.m. There are no social visits during these hours.</li>
+<li>Legal visits during these hours do not need to be scheduled in advance.</li>
+<li><strong>Special legal visits</strong> outside these hours: request through MDC Brooklyn's Legal Department with at least two business days' notice. Email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>.</li>
+</ul>
+
+<h5 id="family-visits">Family and Friends Visitation</h5>
+<div class="mini-grid">
+<div class="mini-card">
+<strong>Saturday</strong>
+8:00 a.m. - 12:00 p.m., based on the detainee's housing unit
+(<a class="inline-link" href="https://www.ice.gov/detain/detention-facilities/mdc-brooklyn">details</a>)
+</div>
+<div class="mini-card">
+<strong>Monday - Friday</strong>
+12:00 p.m. - 3:00 p.m.<br>5:00 p.m. - 7:30 p.m.
+</div>
+</div>
+
+<h5 id="hospital-visits">Visits at Local Hospitals</h5>
+<ul class="schedule-list">
+<li><strong>U.S. Marshals Service (not yet sentenced):</strong> People housed at a local hospital or nursing home are handled by the U.S. Marshals Service, which will tell you what additional information is required and can approve or deny the visit.
+<ul>
+<li>Eastern District of NY, Brooklyn: Peter Lee, <a class="inline-link" href="mailto:peter.lee@usdoj.gov">peter.lee@usdoj.gov</a>, 718-473-3014</li>
+<li>Eastern District of NY, Central Islip: Melanie Macaluso, 631-715-6160</li>
+<li>Southern District of NY: Criminal Section Supervisor, <a class="inline-link" href="mailto:USMS.NYSCrimSec@usdoj.gov">USMS.NYSCrimSec@usdoj.gov</a>, 646-563-9808</li>
+</ul>
+</li>
+<li><strong>BOP Incarcerated Individual:</strong> Legal visit requests go to MDC's legal attorneys, then to the Warden for final approval. If the person has been designated but not yet moved to their institution, email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>. For legal calls with BOP custody, the call is scheduled through the appropriate channels.</li>
+<li><strong>Social visits:</strong> Email <a class="inline-link" href="mailto:BRO-ExecAssistant-S@bop.gov">BRO-ExecAssistant-S@bop.gov</a>. The request goes from the Unit Team to the Warden for approval.</li>
+</ul>
+</div>
+</details>
+
+<details class="sub" id="transit">
+<summary><h4 class="sub-title">Transit</h4></summary>
+<div class="sub-body">
+<h5>Directions to MDC Brooklyn</h5>
+<div class="card">
+<strong>Address</strong>
+<p>
+80 29th Street, Brooklyn, NY 11232<br>
+Between Second and Third Avenues, Sunset Park<br>
+Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
+</p>
+<p>
+<a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=80+29th+Street+Brooklyn+NY+11232">Open in Google Maps</a>
+</p>
+</div>
+
+<h5>By Public Transportation</h5>
+<ul class="schedule-list">
+<li><strong>Subway:</strong> Take the R train to 25th Street, then walk a short distance south and west to 29th Street.</li>
+<li><strong>Alternative:</strong> The D, N, and R trains stop at 36th Street (36th Street &amp; 4th Avenue).</li>
+</ul>
+
+<h5>By Car</h5>
+<ul class="schedule-list">
+<li>The facility is one block from the Gowanus Expressway. Enter the address above into your GPS for current directions.</li>
+<li>Parking is limited near the facility, so public transportation is recommended.</li>
+</ul>
+
+<p><small>Call before you travel to confirm visiting days and times.</small></p>
+</div>
+</details>
+
+<details class="sub" id="visiting-guidelines">
+<summary><h4 class="sub-title">Guidelines</h4></summary>
+<div class="sub-body">
+<p class="lead">What to wear and what to expect. Visitors can be denied entry for inappropriate clothing, so plan ahead.</p>
+
+<div class="grid dress-grid">
+<div class="dress-card family">
+<span class="dress-badge">Families &amp; Friends</span>
+<h4>What to wear</h4>
+<p>Dress as you would for a large gathering of men, women, and young children.</p>
+
+<strong class="dress-label">Do not wear</strong>
+<ul class="no-list">
+<li><strong>Anything green</strong>, or khaki / military-style clothing (looks like incarcerated individual clothing)</li>
+<li><strong>Shiny buttons</strong></li>
+<li><strong>Underwire bras</strong></li>
+<li><strong>Sweatshirts</strong>, hoods, or coats (they can hide contraband)</li>
+<li><strong>Hats or caps</strong></li>
+<li><strong>Tight shirts</strong> (shirts for women should not be too tight)</li>
+<li>Revealing, see-through, or low-cut clothing, including crop tops, halter tops, backless tops, sleeveless garments, leotards, spandex, and bathing suits</li>
+<li>Revealing shorts, miniskirts, or skirts two inches or more above the knee</li>
+<li>Dresses or skirts with a high-cut slit in the front, back, or side</li>
+</ul>
+<p class="dress-note">Rules can vary by facility. When in doubt, choose something loose, plain, and modest.</p>
+</div>
+
+<div class="dress-card attorney">
+<span class="dress-badge">Attorneys</span>
+<h4>What to wear</h4>
+<p>All visitors, including attorneys, must dress appropriately for a correctional environment.</p>
+
+<strong class="dress-label">Do not wear</strong>
+<ul class="no-list">
+<li><strong>Khaki or tan pants</strong> (same color as incarcerated individual clothing)</li>
+<li><strong>Hoods or coats</strong> (they can easily hide contraband)</li>
+<li><strong>Provocative or revealing clothing</strong></li>
+</ul>
+<p class="dress-note"><strong>The duty officer has the final say</strong> on whether attire is appropriate inside the visiting room.</p>
+</div>
+</div>
+
+<h5 class="facts-title">Good to know</h5>
+<div class="grid facts-grid">
+<div class="card fact">
+<strong>Visiting duration</strong>
+<p>By law, an incarcerated individual gets at least four hours of visiting time per month, and the prison can often provide more. The Warden can limit the length of visits or the number of visitors at once to prevent overcrowding.</p>
+</div>
+<div class="card fact">
+<strong>General behavior</strong>
+<p>Visits must be quiet, orderly, and dignified. The visiting room officer can require you to leave if you or the incarcerated individual is not behaving appropriately.</p>
+</div>
+<div class="card fact">
+<strong>Physical contact</strong>
+<p>Handshakes, hugs, and kisses (in good taste) are usually allowed at the start and end of a visit. Staff may limit contact for security reasons. Conjugal visits are not permitted.</p>
+</div>
+</div>
+</div>
+</details>
+
+<details class="sub compact" id="allowed-items">
+<summary><h4 class="sub-title">What you can and can’t bring</h4></summary>
+<div class="sub-body">
+<p class="callout">This list covers items for the person who is incarcerated and comes from the New York State prison system (DOCCS). MDC Brooklyn is a federal facility, so its rules may differ. Call 718-840-4200 before you bring or send anything. What visitors can wear is under Guidelines.</p>
+<div class="mini-grid">
+<div class="mini-card">
+<strong>Usually allowed</strong>
+<ul class="schedule-list">
+<li>Sealed, store-bought, ready-to-eat snacks and drinks with a printed ingredients list</li>
+<li>Plastic toiletries under 16 oz, such as shampoo, stick deodorant, a plastic comb, and a non-electric toothbrush</li>
+<li>Solid-color clothing worth under $50 per item</li>
+<li>Paper, notebooks, and ballpoint or felt-tip pens</li>
+<li>Books and magazines from a publisher or approved distributor</li>
+<li>Religious items, within size and value limits</li>
+</ul>
+</div>
+<div class="mini-card">
+<strong>Not allowed</strong>
+<ul class="schedule-list">
+<li>Glass containers</li>
+<li>Home, bakery, or restaurant-prepared food, and frozen food</li>
+<li>Anything with alcohol or hemp in it</li>
+<li>Blue, black, gray, or orange clothing</li>
+<li>Leather, denim, mesh, spandex, or hooded clothing</li>
+<li>Dice, and items with metal parts, such as metal-bound notebooks</li>
+</ul>
+</div>
+</div>
+<p><a class="btn small" href="https://doccs.ny.gov/family-guide-allowable-items" target="_blank" rel="noopener">Full DOCCS list</a></p>
+</div>
+</details>
+
+</div>
+</details>
+
+<!-- ===== DROPDOWN 2: CONTACT (calls, mail) ===== -->
+<details class="group section-box" id="contact-info">
+<summary><h3>Contact</h3></summary>
+<div class="group-body">
+
+<details class="sub" id="phone-calls">
+<summary><h4 class="sub-title">Calls</h4></summary>
+<div class="sub-body">
+<h5>Calls with attorneys</h5>
+<ul class="schedule-list">
+<li><strong>Pretrial person who is incarcerated</strong> can use unmonitored phones in the housing units and call the Federal Public Defender's Office of the Southern and Eastern Districts directly, free of charge.</li>
+<li><strong>People with private attorneys</strong> use the regular person who is incarcerated telephone, which is recorded.</li>
+<li>Attorney calls are not allowed for social reasons.</li>
+</ul>
+
+<h5>Unmonitored attorney calls</h5>
+<ul class="schedule-list">
+<li>An occasional unmonitored call to an attorney is allowed. These calls fall under the special mail provisions for confidentiality.</li>
+<li>Frequent confidential calls are only allowed when the person shows that correspondence, visiting, and normal telephone use are not adequate, for example because of an imminent court deadline. Once that is shown, the Warden cannot limit how often they call their attorney.</li>
+<li>To get an unmonitored call, the person or their attorney must request approval from the Unit Team and the Legal Department.</li>
+</ul>
+
+<h5>Emergency calls</h5>
+<p class="callout">Emergency calls are only for the death or serious illness of an immediate family member.</p>
+<ul class="schedule-list">
+<li>Request the call through the Religious Services Department or Unit Management.</li>
+<li>To reach someone for an emergency, call the main number (<a class="inline-link" href="tel:7188404200">718-840-4200</a>) and ask for the Religious Services Department, Unit Management, or the appropriate Unit Team.</li>
+</ul>
+</div>
+</details>
+
+<details class="sub" id="mail">
+<summary><h4 class="sub-title">Mail &amp; Email</h4></summary>
+<div class="sub-body">
+<div class="card">
+<strong>Mailing address</strong>
+<p>
+Full committed name and register number<br>
+MDC Brooklyn<br>
+Metropolitan Detention Center<br>
+P.O. Box 329002<br>
+Brooklyn, NY 11232
+</p>
+<ul class="schedule-list">
+<li>Always include the person's register number. Mail without it may be returned.</li>
+<li>For ICE detainees, also include the last four digits of the A-number, plus your own name and address.</li>
+<li>Do not send money to this address.</li>
+</ul>
+</div>
+
+<div class="corrlinks-box">
+<h4>Set up CorrLinks email</h4>
+<p>People at MDC Brooklyn can send and receive monitored email through CorrLinks. You cannot start the conversation: the person inside has to add you first.</p>
+<ol>
+<li>The person adds you as a contact. You receive an email with a link and an identification code.</li>
+<li>Use the link to accept (or block) the request.</li>
+<li>Register using the same email address that got the invitation, plus the identification code.</li>
+<li>Check your email for a verification link, then sign in to send and receive messages.</li>
+</ol>
+<p><a class="btn" href="https://icsolutions.com/corrections/docs/corrlinks_instructions_en_icscorrections.pdf" target="_blank" rel="noopener">Open the setup instructions (PDF)</a></p>
+<p class="corrlinks-note">This guide was written for Oregon's system, so its first steps and any fees may not match MDC Brooklyn. The invitation and registration steps work the same way.</p>
+</div>
+
+<div class="grid group-gap">
+<article class="card">
+<h4>Email (TRULINCS)</h4>
+<ul class="schedule-list">
+<li>Most people at MDC Brooklyn have access to email, which staff monitor.</li>
+<li>Accounts are set up through TRULINCS and need prior approval.</li>
+<li>Recipients must first respond to the initial email to confirm they want to receive emails from a federal incarcerated individual.</li>
+<li>Recipients can accept or block all future electronic communication from the person.</li>
+</ul>
+</article>
+
+<article class="card">
+<h4>Incoming mail</h4>
+<ul class="schedule-list">
+<li>Mail is processed on a 5-day schedule (Monday - Friday).</li>
+<li>All correspondence is photocopied, and the person only receives the photocopy. Special mail and legal mail envelopes are not photocopied.</li>
+<li><strong>MDC will reject:</strong> commercial greeting cards; anything with glitter, stickers, lipstick, crayon, or marker; oily substances or fragrances.</li>
+</ul>
+</article>
+
+<article class="card">
+<h4>Outgoing mail</h4>
+<ul class="schedule-list">
+<li>Address it properly and include the person's full name, register number, and full return address, including MDC Brooklyn.</li>
+<li>It is reviewed beforehand and unsealed.</li>
+<li>Staff may randomly read it and seal it.</li>
+</ul>
+</article>
+
+<article class="card">
+<h4>Legal mail</h4>
+<ul class="schedule-list">
+<li>Mark the envelope <strong>"Special mail - open only in the presence of the person who is incarcerated"</strong> so it is not opened and stays confidential.</li>
+<li>The sender should identify themselves and their firm or organization on the envelope.</li>
+<li>All legal and special mail packages are X-rayed before entry.</li>
+<li>Packages are opened in front of the person.</li>
+</ul>
+</article>
+</div>
+</div>
+</details>
+
+</div>
+</details>
+
+<section id="case-status" class="wrap section section-box" aria-labelledby="case-status-title">
+<h3 id="case-status-title">Case Status (EOIR)</h3>
+<p class="callout">You need the person's alien registration number (A-number): the letter A followed by 8 or 9 digits.</p>
+<p>Call the Executive Office for Immigration Review (EOIR) at any time to get case status information.</p>
+<p><a class="btn primary" href="tel:18008987180">Call 1-800-898-7180</a></p>
+
+<h4>What you can find out</h4>
+<ul class="schedule-list">
+<li>Next hearing date, time, and location</li>
+<li>Case processing information</li>
+<li>Immigration judge decision outcome and date</li>
+<li>Board of Immigration Appeals (BIA) appeal information, including appeal due date, brief due date, and decision outcome and date</li>
+<li>Filing information</li>
+</ul>
+
+<p><a class="btn" href="https://www.justice.gov/eoir/customer-service-initiatives" target="_blank" rel="noopener">EOIR case status &amp; BIA case status</a></p>
+</section>
+
+<section id="bonds" class="wrap section section-box" aria-labelledby="bonds-title">
+<h3 id="bonds-title">Bonds</h3>
+<p>Bonds are processed through the U.S. District Court Clerk's Office.</p>
+</section>
+
+<section id="actions" class="wrap section section-box" aria-labelledby="actions-title">
+<h3 id="actions-title">Immigration Lawyers</h3>
+
+<div class="grid">
+<article class="card">
+<h4>Marisol Conde-Hernandez</h4>
+<p><strong>Phone number: </strong> (973) 306 4246 (ask for Marisol)</p>
+<p><em>Info:</em> Also handles criminal matters.</p>
+<p><strong>Address: </strong> 96 Summer Avenue, Newark, NJ</p>
+<a class="btn small" href="https://ericmarklaw.com/marisol-conde-hernandez" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Larry LeRoy</h4>
+<p><strong>Phone number: </strong> (973) 482 4249</p>
+<p><strong>Address: </strong> 228 Mount Prospect Avenue, Newark, NJ</p>
+<a class="btn small" href="https://njimmigrationattorneys.com/" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Seham K. Elmalak</h4>
+<p><strong>Phone number: </strong> (973) 370 3014</p>
+<p><em>Info:</em> Takes non-removal and SIJS cases.</p>
+<p><strong>Address: </strong> 339 Lafayette St (FL. 1), Newark, NJ</p>
+<a class="btn small" href="https://facebook.com/elmalaklaw" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Kiomeiry Csépes</h4>
+<p><strong>Phone number: </strong> (609) 241 7111</p>
+<p><strong>Address: </strong> 184 South Broad Street, Trenton, NJ</p>
+<a class="btn small" href="https://csepeslaw.com/" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Ludka Zimovcak</h4>
+<p><strong>Phone number: </strong> (201) 670 0006 ext. 105</p>
+<p><em>Info:</em> Nachman, Phulwani, Zimovcak (NPZ) Law Group, P.C.</p>
+<p><strong>Address: </strong> 487 Goffle Road, Ridgewood, NJ</p>
+<a class="btn small" href="mailto:ludka_zimovcak@visaserve.com">Email</a>
+</article>
+
+<article class="card">
+<h4>Claudia Bernal Pérez</h4>
+<p><strong>Phone number: </strong> (929) 527 3100</p>
+<p><strong>Address: </strong> 100 Church Street (Suite 800), New York, NY</p>
+<a class="btn small" href="https://bplawpc.com/" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Brian O’Neill</h4>
+<p><strong>Phone numbers: </strong> (973) 978 4355 (Español) · (201) 803 2126 (English) · (201) 803 3615 (Russian)</p>
+<p><strong>Address: </strong> 55 Madison Avenue (Suite 400), Morristown, NJ</p>
+<a class="btn small" href="https://oneill-law.net/" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Nakeisha Radway</h4>
+<p><strong>Phone number: </strong> (917) 268 7621</p>
+<p><strong>Address: </strong> 3171 US Highway 9 N Suite 37, Old Bridge, NJ</p>
+<a class="btn small" href="https://radwaylawgroup.com/" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Cheryln Lin</h4>
+<p><strong>Phone number: </strong> (201) 565 2437</p>
+<p><em>Info:</em> Takes all cases.</p>
+<p><strong>Address: </strong> Jersey City, Hudson County</p>
+</article>
+</div>
+</section>
+
+<section id="support" class="wrap section section-box" aria-labelledby="support-title">
+<h3 id="support-title">Support &amp; Communities</h3>
+<p class="lead">Groups that offer support, advocacy, and community for people who are incarcerated and their families. Call or email first to confirm services and hours.</p>
+
+<h4 class="group-title">Community organizing &amp; advocacy</h4>
+<div class="grid">
+<article class="card">
+<h4>Communities Not Cages</h4>
+<p class="org-info">A campaign led by impacted people and families across New York State to end mass incarceration and ICE detentions. If you are looking for a community or want to take part in advocacy, get in touch.</p>
+<p><strong>Phone (Center for Community Alternatives, CNC organizer): </strong> <a class="inline-link" href="tel:5853288230">585-328-8230</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:TGant@communityalternatives.org">TGant@communityalternatives.org</a></p>
+<a class="btn small" href="https://www.communityalternatives.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Alliance of Families for Justice</h4>
+<p class="org-info">Supports, empowers, and mobilizes families of people who are or were incarcerated so they can work together for systemic change. Offers free legal and behavioral health services.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:3479730580">(347) 973-0580</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:admin@afj-ny.org">admin@afj-ny.org</a></p>
+<p><strong>Address: </strong> 8 W 126th St, Fl 3, New York, NY 10027 (WeWork Harlem, between 5th Ave &amp; Malcolm X Blvd)</p>
+<a class="btn small" href="https://www.afj-ny.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>The National Council for Incarcerated and Formerly Incarcerated Women and Girls</h4>
+<p class="org-info">A non-profit that advocates for the complete abolition of the incarceration of women and girls. Home of the #FreeHer movement.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:6172992604">617-299-2604</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:info@thecouncil.us">info@thecouncil.us</a></p>
+<p><strong>Address: </strong> 100R Warren Street, Roxbury, MA 02119</p>
+<a class="btn small" href="https://www.thecouncil.us" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>New Hour for Women and Children</h4>
+<p class="org-info">Supports and empowers incarcerated, formerly incarcerated, and justice-impacted women, mothers, and their families. Advocates for criminal justice and reproductive reforms in NY, including the Compassion and Reproductive Equity Act to prevent infant-mother separation during incarceration.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:6312733300">631-273-3300</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:contactus@newhourli.org">contactus@newhourli.org</a></p>
+<p><strong>Address: </strong> 1725 Brentwood Rd, Brentwood, NY 11717</p>
+<a class="btn small" href="https://www.newhourli.org" target="_blank" rel="noopener">Website</a>
+</article>
+</div>
+
+<h4 class="group-title">Support for families &amp; children</h4>
+<div class="grid">
+<article class="card">
+<h4>Osborne Association</h4>
+<p class="org-info">Serves people and families affected by incarceration, with services for children and families, court advocacy, and reentry. Runs a free transportation program from Brooklyn and the Bronx to state prisons upstate.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:7186376560">718-637-6560</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:info@osborneny.org">info@osborneny.org</a></p>
+<p><strong>Court services: </strong> <a class="inline-link" href="mailto:courtadvocacy@osborneny.org">courtadvocacy@osborneny.org</a></p>
+<p><strong>Address: </strong> 175 Remsen St, Brooklyn, NY 11201</p>
+<a class="btn small" href="https://www.osborneny.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Prison Families Alliance</h4>
+<p class="org-info">Peer support for families and friends of people in the criminal justice system, including online support meetings and practical guidance for families.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:7027631389">(702) 763-1389</a> (Mon-Fri, 8:00 a.m. - 5:00 p.m. PT)</p>
+<p><strong>NY local contact (call or text): </strong> (516) 326-0797 or (718) 347-7284 (NAMI Queens / Nassau)</p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:connect@prisonfamiliesalliance.org">connect@prisonfamiliesalliance.org</a></p>
+<p><strong>Address: </strong> 4800 Alpine Place, Suite 7, Las Vegas, NV 89107</p>
+<a class="btn small" href="https://www.prisonfamiliesalliance.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Children of Promise, NYC</h4>
+<p class="org-info">Supports children of incarcerated parents in Brooklyn and helps them thrive.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:7184839290">718-483-9290</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:info@cpnyc.org">info@cpnyc.org</a></p>
+<p><strong>Address: </strong> 53 MacDonough St, Brooklyn, NY 11216</p>
+<a class="btn small" href="https://www.cpnyc.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Women’s Prison Association</h4>
+<p class="org-info">Services and advocacy for women involved in the criminal legal system and their families, including reentry support.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:6462927710">646-292-7710</a> (or 646-292-7740)</p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:info@wpaonline.org">info@wpaonline.org</a> or <a class="inline-link" href="mailto:programs@wpaonline.org">programs@wpaonline.org</a></p>
+<p><strong>Address: </strong> 347 East 10th Street, New York, NY 10009</p>
+<a class="btn small" href="https://www.wpaonline.org" target="_blank" rel="noopener">Website</a>
+</article>
+</div>
+
+<h4 class="group-title">Case guidance &amp; legal reform</h4>
+<div class="grid">
+<article class="card">
+<h4>The Criminal Justice Realm (TCJR)</h4>
+<p class="org-info">Consulting and crisis management organization guiding individuals and families from indictment through trial, incarceration, and appeal. Offers case monitoring, fact-checking, and more.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:13022178387">1 (302) 217-8387</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:assistance@criminaljusticerealm.com">assistance@criminaljusticerealm.com</a></p>
+<p><strong>Address: </strong> 16192 Coastal Hwy, Lewes, DE</p>
+<a class="btn small" href="https://www.criminaljusticerealm.com" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Innocence Project</h4>
+<p class="org-info">Works to free people who have been wrongfully convicted and to reform the legal system to prevent future wrongful convictions.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:2123645340">212-364-5340</a></p>
+<p><strong>Address: </strong> 40 Worth Street, Suite 701, New York, NY 10013</p>
+<a class="btn small" href="https://innocenceproject.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>The Marshall Project</h4>
+<p class="org-info">A non-profit newsroom covering the U.S. criminal justice system. A good source for reporting on what is happening in prisons and courts.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:2128035200">(212) 803-5200</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:info@themarshallproject.org">info@themarshallproject.org</a></p>
+<p><strong>Address: </strong> Studio Cityspire, 156 West 56th Street, 3rd Floor, New York, NY 10019</p>
+<a class="btn small" href="https://www.themarshallproject.org" target="_blank" rel="noopener">Website</a>
+</article>
+
+<article class="card">
+<h4>Prisoners' Legal Services of New York (PLSNY)</h4>
+<p class="org-info">Investigates allegations of abuse, brutality, and medical neglect; provides legal representation; advocates for access to education, healthcare, family visits, and protection from solitary confinement. Helps ensure incarcerated people are heard and treated fairly.</p>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:5184388046">(518) 438-8046</a></p>
+<p><strong>Email: </strong> <a class="inline-link" href="mailto:jfeldman@plsny.org">jfeldman@plsny.org</a></p>
+<p><strong>Address: </strong> 50 Beaver Street, 5th Floor, Albany, NY 12207</p>
+<a class="btn small" href="https://plsny.org/offices/" target="_blank" rel="noopener">Website</a>
+</article>
+</div>
+
+<h4 class="group-title">Faith community</h4>
+<div class="grid">
+<article class="card">
+<h4>Good Shepherd Lutheran Church</h4>
+<p><strong>Phone: </strong> <a class="inline-link" href="tel:7187458520">718-745-8520</a></p>
+<p><strong>Address: </strong> 74-20 4th Ave, Brooklyn, NY 11209</p>
+</article>
+</div>
+</section>
+
+<!-- ===== DROPDOWN 3: OTHER (marriage) ===== -->
+<details class="group section-box" id="other">
+<summary><h3>Other</h3></summary>
+<div class="group-body">
+
+<details class="sub" id="marriage">
+<summary><h4 class="sub-title">Marriage</h4></summary>
+<div class="sub-body">
+<h5>Getting married while incarcerated: how it works</h5>
+<ol class="schedule-list">
+<li>The person submits a written request to marry through their case manager. It goes to their unit team.</li>
+<li>The unit team reviews the request and sends a written report of its findings and recommendation to the Warden.</li>
+<li>The Warden decides and notifies the person in writing. A copy goes in their central file.</li>
+<li>If the request is denied, the decision can be appealed through the Administrative Remedy Procedure.</li>
+</ol>
+
+<h5>Requirements</h5>
+<div class="mini-grid">
+<div class="mini-card">
+<strong>Legally eligible</strong>
+If the person is or was married, written verification that the marriage was legally dissolved is required.
+</div>
+<div class="mini-card">
+<strong>Mentally competent</strong>
+The person must be mentally competent to marry.
+</div>
+<div class="mini-card">
+<strong>Spouse confirms</strong>
+The intended spouse must verify their intention to marry, usually in writing.
+</div>
+</div>
+
+<p>The Warden approves the request unless there is a legal restriction, or the marriage would threaten the security or good order of the institution or the protection of the public.</p>
+<p class="callout">All marriage expenses, such as the marriage license, are paid by the person who is incarcerated, their intended spouse, their family, or another source approved by the Warden.</p>
+</div>
+</details>
+
+</div>
+</details>
+
+<section id="contact" class="wrap section section-box dark" aria-labelledby="contact-title">
+<h3 id="contact-title">Contact Us</h3>
+<p><strong>The Remedy Project</strong> — Email: <a class="inline-link" href="mailto:admin@theremedyproj.org">admin@theremedyproj.org</a> — Phone: <a class="inline-link" href="tel:9292490141">929-249-0141</a></p>
+<p>To report updates or request additions to this page, email the organizer or use the form below.</p>
+
+<form class="contact-form" aria-label="Contact form" method="post" action="#">
+<label>
+Your name
+<input name="name" type="text" required />
+</label>
+<label>
+Email
+<input name="email" type="email" required />
+</label>
+<label>
+Message
+<textarea name="message" rows="4" required></textarea>
+</label>
+<button class="btn" type="submit">Send</button>
+</form>
+</section>
+
+<footer class="site-footer">
+<div class="wrap">
+<small>© <span id="year"></span> The Remedy Project </small>
+</div>
+</footer>
+</main>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('printBtn').addEventListener('click', function () {
+window.print();
+});
+document.getElementById('downloadBtn').addEventListener('click', function (e) {
+location.href = 'toolkit.pdf';
+});
+
+// Open the dropdown(s) that contain a link's target, so tabs always land on visible content.
+function openFor(hash, scroll) {
+var el = hash && hash.length > 1 && document.getElementById(hash.slice(1));
+if (!el) return;
+for (var d = el; d; d = d.parentElement) { if (d.tagName === 'DETAILS') d.open = true; }
+if (scroll) el.scrollIntoView();
+}
+document.addEventListener('click', function (e) {
+var a = e.target.closest('a[href^="#"]');
+if (a) openFor(a.getAttribute('href'), false);
+});
+window.addEventListener('hashchange', function () { openFor(location.hash, true); });
+openFor(location.hash, true);
+
+// Show every dropdown when printing, then restore.
+window.addEventListener('beforeprint', function () {
+document.querySelectorAll('details').forEach(function (d) { d.dataset.was = d.open ? '1' : '0'; d.open = true; });
+});
+window.addEventListener('afterprint', function () {
+document.querySelectorAll('details').forEach(function (d) { d.open = d.dataset.was === '1'; });
+});
+</script>
 </body>
 </html>
