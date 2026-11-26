@@ -252,3 +252,41 @@ ol.schedule-list{padding-left:1.4rem}
 
 /* Subtext in italics */
 .lead,.org-info,.dress-note,.corrlinks-note,small{font-style:italic}
+
+/* Dropdown groups (Visit, Contact, Other). Load after styles.css. */
+.group{padding:0}
+.group > summary,.sub > summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.group > summary::-webkit-details-marker,.sub > summary::-webkit-details-marker{display:none}
+.group > summary::after,.sub > summary::after{content:"+";font-size:1.6rem;font-weight:700;line-height:1;color:var(--accent)}
+.group[open] > summary::after,.sub[open] > summary::after{content:"\2212"}
+.group > summary:focus-visible,.sub > summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:var(--radius-sm)}
+
+.group > summary{padding:1.1rem 1.5rem}
+.group > summary h3{margin:0;font-size:1.5rem;font-weight:600;line-height:1.3;color:var(--accent-2)}
+.group-body{padding:0 1.5rem 1.25rem}
+
+.sub{border-top:1px solid #e3e6ee}
+.sub > summary{padding:.9rem 0}
+.sub-title{margin:0;font-size:1.05rem;color:var(--accent-2)}
+.group > summary:hover h3,.sub > summary:hover .sub-title{color:var(--accent)}
+.sub-body{padding:0 0 1.25rem}
+.sub h5{margin:1.25rem 0 .5rem;font-family:var(--font-title);font-size:.95rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.sub-body > h5:first-child{margin-top:.25rem}
+
+/* Smaller section for "What you can and can't bring" */
+.compact{font-size:.92rem}
+.compact .schedule-list{margin:.4rem 0 0}
+.compact .mini-card{padding:.6rem .8rem}
+.compact .callout{font-size:.9rem;padding:.6rem .8rem}
+
+@media (max-width:720px){
+  .group > summary{padding:1rem}
+  .group > summary h3{font-size:1.2rem}
+  .group-body{padding:0 1rem 1rem}
+}
+
+@media print{
+  .group > summary::after,.sub > summary::after{display:none}
+  .sub{border-top-color:#ccc}
+}
+
