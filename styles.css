@@ -280,8 +280,8 @@ html{scroll-behavior:smooth}
 }
 
 /* Smaller section: "What you can and can't bring" */
-.section-box.compact{padding:1.1rem 1.25rem;font-size:.92rem}
-.section-box.compact > h3{font-size:1.15rem;margin-bottom:.6rem}
+.part.compact{font-size:.92rem}
+.part.compact .part-title{font-size:1rem}
 .compact .schedule-list{margin:.4rem 0 0}
 .compact .mini-card{padding:.6rem .8rem}
 .compact .callout{font-size:.9rem;padding:.6rem .8rem}
@@ -310,3 +310,10 @@ html{scroll-padding-top:var(--sticky-h,11rem)}
   .announce p{font-size:.9rem}
 }
 @media print{.sticky-top{position:static}.announce{display:none}}
+
+
+/* ===== Parts inside a combined section (Visits, Contact) ===== */
+.part{margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid #e3e6ee}
+.section-box > h3 + .part{margin-top:0;padding-top:0;border-top:0}
+.part-title{margin:0 0 .75rem;font-size:1.2rem;letter-spacing:.1em;color:var(--accent)}
+@media print{.part{border-top-color:#ccc}}
