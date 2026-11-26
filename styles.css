@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Montserrat:wght@500;600&display=swap');
 
-:root{
+: root{
   --accent:#0e7c7b;
   --accent-dark:#0a5352;
   --accent-light:#6fe0dc;
@@ -12,7 +12,7 @@
   --radius-lg:24px;
   --radius-md:18px;
   --radius-sm:12px;
-  --font-title:Montserrat, Oxygen, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-title: Montserrat, Oxygen, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-family: Oxygen, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
