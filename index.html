@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -9,26 +8,53 @@
 <meta name="description" content="Action toolkit for supporting people incarcerated at PRISON_NAME. How to help, schedule, downloadable materials, and resources." />
 </head>
 <body>
+<div class="sticky-top" id="stickyTop">
 <header class="site-header">
 <div class="wrap">
 <h1 class="site-title">Metropolitan Detention Center Toolkit</h1>
 <nav aria-label="Main navigation">
-<a href="#visit">Visit</a>
-<a href="#contact-info">Contact</a>
+<div class="nav-item">
+<button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-visit">Visit</button>
+<div class="menu" id="menu-visit">
+<a href="#schedule">Time</a>
+<a href="#transit">Transit</a>
+<a href="#visiting-guidelines">Guidelines</a>
+<a href="#allowed-items">What you can and can’t bring</a>
+</div>
+</div>
+<div class="nav-item">
+<button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-contact">Contact</button>
+<div class="menu" id="menu-contact">
+<a href="#phone-calls">Calls</a>
+<a href="#mail">Mail</a>
+</div>
+</div>
 <a href="#case-status">Case Status</a>
 <a href="#bonds">Bonds</a>
 <a href="#actions">Lawyers</a>
 <a href="#support">Support</a>
+<div class="nav-item">
+<button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-other">Other</button>
+<div class="menu menu-right" id="menu-other">
 <a href="#marriage">Marriage</a>
+</div>
+</div>
 <a href="#contact">Contact Us</a>
 </nav>
 </div>
 </header>
+<aside class="announce" id="announce" aria-label="Announcements">
+<div class="wrap">
+<strong>Announcements</strong>
+<p>.....</p>
+</div>
+</aside>
+</div>
 
 <main>
 <section class="hero" id="top" aria-labelledby="hero-title">
 <div class="wrap hero-inner">
-<div>
+<div class="hero-text">
 <h2 id="hero-title">Take action to support people at MDC Brooklyn</h2>
 <p class="lead">This toolkit explains what’s happening, when events are planned, and practical ways to support loved ones and amplify the message.</p>
 <p class="hero-cta">
@@ -37,12 +63,6 @@
 <a class="btn ghost" href="#share" id="shareBtn">Share</a>
 </p>
 </div>
-<aside class="hero-side" aria-hidden="false">
-<div class="card small">
-<strong> ANNOUNCEMENTS </strong>
-<p>.....</p>
-</div>
-</aside>
 </div>
 </section>
 
@@ -63,15 +83,9 @@
 </section>
 -->
 
-<!-- ===== DROPDOWN 1: VISIT ===== -->
-<details class="group section-box" id="visit">
-<summary><h3>Visit</h3></summary>
-<div class="group-body">
-
-<details class="sub" id="schedule">
-<summary><h4 class="sub-title">Time</h4></summary>
-<div class="sub-body">
-<h5>Legal Visiting Hours</h5>
+<!-- ===== VISIT ===== -->
+<section id="schedule" class="wrap section section-box" aria-labelledby="schedule-title">
+<h3 id="schedule-title">Legal Visiting Hours</h3>
 <p class="callout">Call 718-840-4200 to confirm hours before you travel.</p>
 <div class="mini-grid">
 <div class="mini-card">
@@ -88,7 +102,7 @@
 </div>
 </div>
 
-<h5>Important - Count Time</h5>
+<h4>Important - Count Time</h4>
 <ul class="schedule-list">
 <li><strong>Count time</strong> means the prison pauses entry and exit and suspends movement, which causes delays and prevents admission. It takes 60 minutes or more to clear.</li>
 <li>No processing of attorneys or visitors from 3:00 p.m. until the count clears (9:00 a.m. on Saturdays, Sundays, and federal holidays). Attorneys who arrive within an hour before a count will not be able to visit their client until the count clears.</li>
@@ -96,8 +110,10 @@
 <li>Legal visits during these hours do not need to be scheduled in advance.</li>
 <li><strong>Special legal visits</strong> outside these hours: request through MDC Brooklyn's Legal Department with at least two business days' notice. Email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>.</li>
 </ul>
+</section>
 
-<h5 id="family-visits">Family and Friends Visitation</h5>
+<section id="family-visits" class="wrap section section-box" aria-labelledby="family-title">
+<h3 id="family-title">Family and Friends Visitation</h3>
 <div class="mini-grid">
 <div class="mini-card">
 <strong>Saturday</strong>
@@ -109,8 +125,10 @@
 12:00 p.m. - 3:00 p.m.<br>5:00 p.m. - 7:30 p.m.
 </div>
 </div>
+</section>
 
-<h5 id="hospital-visits">Visits at Local Hospitals</h5>
+<section id="hospital-visits" class="wrap section section-box" aria-labelledby="hospital-title">
+<h3 id="hospital-title">Visits at Local Hospitals</h3>
 <ul class="schedule-list">
 <li><strong>U.S. Marshals Service (not yet sentenced):</strong> People housed at a local hospital or nursing home are handled by the U.S. Marshals Service, which will tell you what additional information is required and can approve or deny the visit.
 <ul>
@@ -122,13 +140,10 @@
 <li><strong>BOP Incarcerated Individual:</strong> Legal visit requests go to MDC's legal attorneys, then to the Warden for final approval. If the person has been designated but not yet moved to their institution, email <a class="inline-link" href="mailto:BRO-LegalVisit-S@bop.gov">BRO-LegalVisit-S@bop.gov</a>. For legal calls with BOP custody, the call is scheduled through the appropriate channels.</li>
 <li><strong>Social visits:</strong> Email <a class="inline-link" href="mailto:BRO-ExecAssistant-S@bop.gov">BRO-ExecAssistant-S@bop.gov</a>. The request goes from the Unit Team to the Warden for approval.</li>
 </ul>
-</div>
-</details>
+</section>
 
-<details class="sub" id="transit">
-<summary><h4 class="sub-title">Transit</h4></summary>
-<div class="sub-body">
-<h5>Directions to MDC Brooklyn</h5>
+<section id="transit" class="wrap section section-box" aria-labelledby="transit-title">
+<h3 id="transit-title">Directions to MDC Brooklyn</h3>
 <div class="card">
 <strong>Address</strong>
 <p>
@@ -141,25 +156,23 @@ Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
 </p>
 </div>
 
-<h5>By Public Transportation</h5>
+<h4>By Public Transportation</h4>
 <ul class="schedule-list">
 <li><strong>Subway:</strong> Take the R train to 25th Street, then walk a short distance south and west to 29th Street.</li>
 <li><strong>Alternative:</strong> The D, N, and R trains stop at 36th Street (36th Street &amp; 4th Avenue).</li>
 </ul>
 
-<h5>By Car</h5>
+<h4>By Car</h4>
 <ul class="schedule-list">
 <li>The facility is one block from the Gowanus Expressway. Enter the address above into your GPS for current directions.</li>
 <li>Parking is limited near the facility, so public transportation is recommended.</li>
 </ul>
 
 <p><small>Call before you travel to confirm visiting days and times.</small></p>
-</div>
-</details>
+</section>
 
-<details class="sub" id="visiting-guidelines">
-<summary><h4 class="sub-title">Guidelines</h4></summary>
-<div class="sub-body">
+<section id="visiting-guidelines" class="wrap section section-box" aria-labelledby="guidelines-title">
+<h3 id="guidelines-title">Visiting Guidelines</h3>
 <p class="lead">What to wear and what to expect. Visitors can be denied entry for inappropriate clothing, so plan ahead.</p>
 
 <div class="grid dress-grid">
@@ -198,7 +211,7 @@ Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
 </div>
 </div>
 
-<h5 class="facts-title">Good to know</h5>
+<h4 class="facts-title">Good to know</h4>
 <div class="grid facts-grid">
 <div class="card fact">
 <strong>Visiting duration</strong>
@@ -213,12 +226,10 @@ Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
 <p>Handshakes, hugs, and kisses (in good taste) are usually allowed at the start and end of a visit. Staff may limit contact for security reasons. Conjugal visits are not permitted.</p>
 </div>
 </div>
-</div>
-</details>
+</section>
 
-<details class="sub compact" id="allowed-items">
-<summary><h4 class="sub-title">What you can and can’t bring</h4></summary>
-<div class="sub-body">
+<section id="allowed-items" class="wrap section section-box compact" aria-labelledby="allowed-title">
+<h3 id="allowed-title">What you can and can’t bring</h3>
 <p class="callout">This list covers items for the person who is incarcerated and comes from the New York State prison system (DOCCS). MDC Brooklyn is a federal facility, so its rules may differ. Call 718-840-4200 before you bring or send anything. What visitors can wear is under Guidelines.</p>
 <div class="mini-grid">
 <div class="mini-card">
@@ -245,46 +256,35 @@ Phone: <a class="inline-link" href="tel:7188404200">718-840-4200</a>
 </div>
 </div>
 <p><a class="btn small" href="https://doccs.ny.gov/family-guide-allowable-items" target="_blank" rel="noopener">Full DOCCS list</a></p>
-</div>
-</details>
+</section>
 
-</div>
-</details>
-
-<!-- ===== DROPDOWN 2: CONTACT (calls, mail) ===== -->
-<details class="group section-box" id="contact-info">
-<summary><h3>Contact</h3></summary>
-<div class="group-body">
-
-<details class="sub" id="phone-calls">
-<summary><h4 class="sub-title">Calls</h4></summary>
-<div class="sub-body">
-<h5>Calls with attorneys</h5>
+<!-- ===== CONTACT ===== -->
+<section id="phone-calls" class="wrap section section-box" aria-labelledby="phone-title">
+<h3 id="phone-title">Phone Calls</h3>
+<h4>Calls with attorneys</h4>
 <ul class="schedule-list">
 <li><strong>Pretrial person who is incarcerated</strong> can use unmonitored phones in the housing units and call the Federal Public Defender's Office of the Southern and Eastern Districts directly, free of charge.</li>
 <li><strong>People with private attorneys</strong> use the regular person who is incarcerated telephone, which is recorded.</li>
 <li>Attorney calls are not allowed for social reasons.</li>
 </ul>
 
-<h5>Unmonitored attorney calls</h5>
+<h4>Unmonitored attorney calls</h4>
 <ul class="schedule-list">
 <li>An occasional unmonitored call to an attorney is allowed. These calls fall under the special mail provisions for confidentiality.</li>
 <li>Frequent confidential calls are only allowed when the person shows that correspondence, visiting, and normal telephone use are not adequate, for example because of an imminent court deadline. Once that is shown, the Warden cannot limit how often they call their attorney.</li>
 <li>To get an unmonitored call, the person or their attorney must request approval from the Unit Team and the Legal Department.</li>
 </ul>
 
-<h5>Emergency calls</h5>
+<h4>Emergency calls</h4>
 <p class="callout">Emergency calls are only for the death or serious illness of an immediate family member.</p>
 <ul class="schedule-list">
 <li>Request the call through the Religious Services Department or Unit Management.</li>
 <li>To reach someone for an emergency, call the main number (<a class="inline-link" href="tel:7188404200">718-840-4200</a>) and ask for the Religious Services Department, Unit Management, or the appropriate Unit Team.</li>
 </ul>
-</div>
-</details>
+</section>
 
-<details class="sub" id="mail">
-<summary><h4 class="sub-title">Mail &amp; Email</h4></summary>
-<div class="sub-body">
+<section id="mail" class="wrap section section-box" aria-labelledby="mail-title">
+<h3 id="mail-title">Mail &amp; Email</h3>
 <div class="card">
 <strong>Mailing address</strong>
 <p>
@@ -353,11 +353,7 @@ Brooklyn, NY 11232
 </ul>
 </article>
 </div>
-</div>
-</details>
-
-</div>
-</details>
+</section>
 
 <section id="case-status" class="wrap section section-box" aria-labelledby="case-status-title">
 <h3 id="case-status-title">Case Status (EOIR)</h3>
@@ -585,15 +581,10 @@ Brooklyn, NY 11232
 </div>
 </section>
 
-<!-- ===== DROPDOWN 3: OTHER (marriage) ===== -->
-<details class="group section-box" id="other">
-<summary><h3>Other</h3></summary>
-<div class="group-body">
-
-<details class="sub" id="marriage">
-<summary><h4 class="sub-title">Marriage</h4></summary>
-<div class="sub-body">
-<h5>Getting married while incarcerated: how it works</h5>
+<!-- ===== OTHER ===== -->
+<section id="marriage" class="wrap section section-box" aria-labelledby="marriage-title">
+<h3 id="marriage-title">Getting Married While Incarcerated</h3>
+<h4>How it works</h4>
 <ol class="schedule-list">
 <li>The person submits a written request to marry through their case manager. It goes to their unit team.</li>
 <li>The unit team reviews the request and sends a written report of its findings and recommendation to the Warden.</li>
@@ -601,7 +592,7 @@ Brooklyn, NY 11232
 <li>If the request is denied, the decision can be appealed through the Administrative Remedy Procedure.</li>
 </ol>
 
-<h5>Requirements</h5>
+<h4>Requirements</h4>
 <div class="mini-grid">
 <div class="mini-card">
 <strong>Legally eligible</strong>
@@ -619,11 +610,7 @@ The intended spouse must verify their intention to marry, usually in writing.
 
 <p>The Warden approves the request unless there is a legal restriction, or the marriage would threaten the security or good order of the institution or the protection of the public.</p>
 <p class="callout">All marriage expenses, such as the marriage license, are paid by the person who is incarcerated, their intended spouse, their family, or another source approved by the Warden.</p>
-</div>
-</details>
-
-</div>
-</details>
+</section>
 
 <section id="contact" class="wrap section section-box dark" aria-labelledby="contact-title">
 <h3 id="contact-title">Contact Us</h3>
@@ -663,27 +650,45 @@ document.getElementById('downloadBtn').addEventListener('click', function (e) {
 location.href = 'toolkit.pdf';
 });
 
-// Open the dropdown(s) that contain a link's target, so tabs always land on visible content.
-function openFor(hash, scroll) {
-var el = hash && hash.length > 1 && document.getElementById(hash.slice(1));
-if (!el) return;
-for (var d = el; d; d = d.parentElement) { if (d.tagName === 'DETAILS') d.open = true; }
-if (scroll) el.scrollIntoView();
+// Keep the red announcement bar the same height as the header, and offset anchor links below both sticky bars.
+var stickyTop = document.getElementById('stickyTop');
+var siteHeader = document.querySelector('.site-header');
+var announceBar = document.getElementById('announce');
+function syncSticky() {
+var narrow = window.matchMedia('(max-width: 720px)').matches;
+announceBar.style.height = narrow ? '' : siteHeader.offsetHeight + 'px';
+document.documentElement.style.setProperty('--sticky-h', (stickyTop.offsetHeight + 8) + 'px');
 }
-document.addEventListener('click', function (e) {
-var a = e.target.closest('a[href^="#"]');
-if (a) openFor(a.getAttribute('href'), false);
-});
-window.addEventListener('hashchange', function () { openFor(location.hash, true); });
-openFor(location.hash, true);
+syncSticky();
+window.addEventListener('resize', syncSticky);
+if ('ResizeObserver' in window) new ResizeObserver(syncSticky).observe(siteHeader);
 
-// Show every dropdown when printing, then restore.
-window.addEventListener('beforeprint', function () {
-document.querySelectorAll('details').forEach(function (d) { d.dataset.was = d.open ? '1' : '0'; d.open = true; });
+// Header dropdown menus
+var navItems = document.querySelectorAll('.nav-item');
+function closeMenus(except) {
+navItems.forEach(function (i) {
+if (i !== except) { i.classList.remove('open'); i.querySelector('.nav-btn').setAttribute('aria-expanded', 'false'); }
 });
-window.addEventListener('afterprint', function () {
-document.querySelectorAll('details').forEach(function (d) { d.open = d.dataset.was === '1'; });
+}
+navItems.forEach(function (item) {
+var btn = item.querySelector('.nav-btn');
+btn.addEventListener('click', function () {
+var willOpen = !item.classList.contains('open');
+closeMenus(item);
+item.classList.toggle('open', willOpen);
+btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
 });
+item.querySelectorAll('.menu a').forEach(function (a) {
+a.addEventListener('click', function () {
+item.classList.remove('open');
+btn.setAttribute('aria-expanded', 'false');
+item.classList.add('closed');
+item.addEventListener('mouseleave', function () { item.classList.remove('closed'); }, { once: true });
+});
+});
+});
+document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeMenus(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenus(); });
 </script>
 </body>
 </html>
